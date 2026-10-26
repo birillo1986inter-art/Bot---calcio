@@ -6,24 +6,21 @@ API_KEY = "e8dbbddef0ac48d69d0108a60f167580"
 TELEGRAM_BOT_TOKEN = "8245305133:AAETS2UpZ5RqqoDFizGSxIzE8Cb5iwrIX2Y"
 TELEGRAM_CHAT_ID = "661442573"
 
+# Prende in automatico la data odierna del giorno in cui gira lo script
 DATE = datetime.date.today().strftime("%Y-%m-%d") 
 HEADERS = {
     'x-apisports-key': API_KEY
 }
 
-# Lista vuota = Prende TUTTE le partite e i campionati del mondo per oggi
+# Lista vuota = Prende TUTTE le partite del mondo per la giornata odierna
 TARGET_LEAGUES = [] 
 
-# I tuoi bookmaker preferiti in ordine di priorità
 PREFERRED_BOOKMAKERS = ["Bet365", "GoldBet", "Lottomatica", "Sisal", "Snai"]
 # ==================================================
 
 def invia_telegram_lunghi(testo):
-    """Funzione per inviare messaggi lunghi dividendoli nei limiti di Telegram"""
     if not TELEGRAM_BOT_TOKEN:
-        print("⚠️ Token Telegram non configurato.")
         return
-        
     url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
     max_length = 4000
     chunks = [testo[i:i+max_length] for i in range(0, len(testo), max_length)]
@@ -35,25 +32,44 @@ def invia_telegram_lunghi(testo):
             "parse_mode": "Markdown"
         }
         try:
-            response = requests.post(url, json=payload)
-            if response.status_code == 200:
-                print("📤 Messaggio inviato con successo su Telegram!")
+            requests.post(url, json=payload)
+        except Exception:
+            pass
+
+def calcola_pronostico(mercati_dict):
+    try:
+        home_win = float(mercati_dict.get('1', {}).get('Home', 0))
+        away_win = float(mercati_dict.get('1', {}).get('Away', 0))
+        
+        if home_win > 0 and away_win > 0:
+            if home_win < 1.50:
+                return "🎯 *Pronostico:* `1 (Favorito netto)`"
+            elif away_win < 1.50:
+                return "🎯 *Pronostico:* `2 (Favorito netto)`"
+            elif home_win < 1.85:
+                return "🎯 *Pronostico:* `1X` (Casetta solida)"
+            elif away_win < 1.85:
+                return "🎯 *Pronostico:* `X2` (Ospite favorito)"
+            elif abs(home_win - away_win) < 0.3:
+                return "🎯 *Pronostico:* `Goal` o `1X / X2` (Equilibrata)"
             else:
-                print(f"❌ Errore invio Telegram: {response.text}")
-        except Exception as e:
-            print(f"⚠️ Errore di connessione a Telegram: {e}")
+                return "🎯 *Pronostico:* `Over 1.5` / `Doppia Chance`"
+    except Exception:
+        pass
+    return "🎯 *Pronostico:* `Studio consigliato`"
 
 def avvia_script():
+    # Scarica l'intero palinsesto della giornata odierna (DATA)
     fixtures_url = f"https://v3.football.api-sports.io/fixtures?date={DATE}"
-    print(f"📥 Scaricamento palinsesto completo per il {DATE}...")
+    print(f"📥 Scaricamento palinsesto completo per il giorno {DATE}...")
     
     res = requests.get(fixtures_url, headers=HEADERS)
     if res.status_code != 200:
-        print(f"❌ Errore nel palinsesto: {res.status_code} - {res.text}")
+        print(f"❌ Errore nel palinsesto: {res.status_code}")
         return
         
     fixtures = res.json().get('response', [])
-    print(f"✅ Trovate {len(fixtures)} partite totali nel mondo.")
+    print(f"✅ Trovate {len(fixtures)} partite totali in programma oggi.")
 
     output_lines = []
     output_lines.append(f"⚽ *PALINSESTO E QUOTE DEL {DATE}* ⚽\n")
@@ -63,7 +79,6 @@ def avvia_script():
     for match in fixtures:
         fixture_id = match['fixture']['id']
         
-        # Estrazione dell'orario della partita (formato HH:MM)
         utc_date = match['fixture']['date']
         match_time = utc_date.split('T')[1][:5] if 'T' in utc_date else ""
 
@@ -72,76 +87,79 @@ def avvia_script():
         league = match['league']['name']
         country = match['league']['country']
         
+        # Interroga le quote per questa specifica partita del giorno
         odds_url = f"https://v3.football.api-sports.io/odds?fixture={fixture_id}"
         res_odds = requests.get(odds_url, headers=HEADERS)
         
-        if res_odds.status_code != 200:
-            continue
-            
-        odds_data = res_odds.json().get('response', [])
-        if not odds_data:
-            continue
-            
-        bookmakers = odds_data[0].get('bookmakers', [])
-        if not bookmakers:
-            continue
-            
-        # Ricerca del bookmaker in base alla priorità
         selected_bk = None
-        for pref in PREFERRED_BOOKMAKERS:
-            for bk in bookmakers:
-                if pref.lower() in bk.get('name', '').lower():
-                    selected_bk = bk
-                    break
-            if selected_bk:
-                break
-        
-        if not selected_bk and bookmakers:
-            selected_bk = bookmakers[0]
-                
-        # Intestazione della partita con orario in evidenza
-        match_header = f"\n──────────────────\n🏆 *{country} - {league}*\n⏰ *Orario:* `{match_time}`\n⚽ *{home} vs {away}*\n📊 *Bookmaker:* {selected_bk.get('name')}"
-        
         match_markets = []
-        for bet in selected_bk.get('bets', []):
-            bet_id = bet.get('id')
-            
-            is_target = False
-            label = ""
-            
-            if bet_id == 1:
-                is_target, label = True, "1X2 Finale"
-            elif bet_id == 12:
-                is_target, label = True, "Doppia Chance"
-            elif bet_id == 8:
-                is_target, label = True, "Gol / No Gol"
-            elif bet_id == 3:
-                values_filtered = [v for v in bet.get('values', []) if str(v.get('value')) in ["Over 1.5", "Under 1.5", "Over 2.5", "Under 2.5"]]
-                if values_filtered:
-                    is_target, label = True, "Under/Over 1.5 & 2.5"
-                    bet['values'] = values_filtered
+        dati_per_pronostico = {}
 
-            if is_target:
-                values_str = [f"*{v.get('value')}*: `{v.get('odd')}`" for v in bet.get('values', [])]
-                line_market = f"  🔹 *{label}:* " + " | ".join(values_str)
-                match_markets.append(line_market)
+        if res_odds.status_code == 200:
+            odds_data = res_odds.json().get('response', [])
+            if odds_data:
+                bookmakers = odds_data[0].get('bookmakers', [])
+                for pref in PREFERRED_BOOKMAKERS:
+                    for bk in bookmakers:
+                        if pref.lower() in bk.get('name', '').lower():
+                            selected_bk = bk
+                            break
+                    if selected_bk:
+                        break
+                if not selected_bk and bookmakers:
+                    selected_bk = bookmakers[0]
 
-        if match_markets:
+        # Se troviamo il bookmaker e le quote, estraiamo i mercati principali puliti
+        if selected_bk:
+            bk_name = selected_bk.get('name')
+            for bet in selected_bk.get('bets', []):
+                bet_id = bet.get('id')
+                is_target = False
+                label = ""
+                
+                if bet_id == 1:
+                    is_target, label = True, "1X2 Finale"
+                    dati_per_pronostico['1'] = {v.get('value'): v.get('odd') for v in bet.get('values', [])}
+                elif bet_id == 12:
+                    is_target, label = True, "Doppia Chance"
+                elif bet_id == 8:
+                    is_target, label = True, "Gol / No Gol"
+                elif bet_id == 3:
+                    values_filtered = [v for v in bet.get('values', []) if str(v.get('value')) in ["Over 1.5", "Under 1.5", "Over 2.5", "Under 2.5"]]
+                    if values_filtered:
+                        is_target, label = True, "Under/Over 1.5 & 2.5"
+                        bet['values'] = values_filtered
+
+                if is_target:
+                    values_str = [f"*{v.get('value')}*: `{v.get('odd')}`" for v in bet.get('values', [])]
+                    line_market = f"  🔹 *{label}:* " + " | ".join(values_str)
+                    match_markets.append(line_market)
+
+        # Costruiamo il blocco della partita
+        match_header = f"\n──────────────────\n🏆 *{country} - {league}*\n⏰ *Orario:* `{match_time}`\n⚽ *{home} vs {away}*"
+        
+        if selected_bk and match_markets:
+            match_header += f"\n📊 *Bookmaker:* {selected_bk.get('name')}"
             output_lines.append(match_header)
+            pronostico_line = calcola_pronostico(dati_per_pronostico)
+            output_lines.append(f"  {pronostico_line}")
             output_lines.extend(match_markets)
-            matches_processed += 1
+        else:
+            # Se per quella partita del giorno i bookmaker non hanno ancora messo le quote,
+            # lo script mostra comunque l'incontro in programma con l'orario!
+            match_header += f"\n📊 *Bookmaker:* `Quote in fase di pubblicazione`"
+            output_lines.append(match_header)
+            output_lines.append(f"  ⏳ *Stato:* Partita in programma oggi (quote non ancora disponibili)")
 
-    # Unisce tutto il testo
+        matches_processed += 1
+
     testo_finale = "\n".join(output_lines)
 
-    # Salvataggio del file di testo di riserva nel repository
     filename = f"palinsesto_quote_{DATE}.txt"
     with open(filename, "w", encoding="utf-8") as f:
         f.write(testo_finale)
         
-    print(f"\n✨ Fatto! Analizzate {matches_processed} partite con quote. Risultati salvati in: {filename}")
-    
-    # Invio diretto del palinsesto formattato su Telegram
+    print(f"\n✨ Fatto! Elaborate {matches_processed} partite per la data {DATE}. Salvate in: {filename}")
     invia_telegram_lunghi(testo_finale)
 
 if __name__ == "__main__":
