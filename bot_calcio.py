@@ -11,8 +11,8 @@ HEADERS = {
     'x-apisports-key': API_KEY
 }
 
-# Campionati d'interesse (Serie A, Serie B, Premier, Liga, Bundesliga, Ligue 1, Champions, Europa League)
-TARGET_LEAGUES = [135, 136, 39, 140, 78, 61, 2, 3] 
+# Lista vuota = Prende TUTTI i campionati del mondo per oggi
+TARGET_LEAGUES = [] 
 
 # I tuoi bookmaker preferiti in ordine di priorità
 PREFERRED_BOOKMAKERS = ["Bet365", "GoldBet", "Lottomatica", "Sisal", "Snai"]
@@ -55,12 +55,9 @@ def avvia_script():
     fixtures = res.json().get('response', [])
     print(f"✅ Trovate {len(fixtures)} partite totali nel mondo.")
 
-    # Filtra per le leghe scelte
-    filtered_fixtures = [
-        f for f in fixtures 
-        if not TARGET_LEAGUES or f['league']['id'] in TARGET_LEAGUES
-    ]
-    print(f"🎯 Partite filtrate per le tue leghe d'interesse: {len(filtered_fixtures)}")
+    # Nessun filtro: prende tutto
+    filtered_fixtures = fixtures
+    print(f"🎯 Partite totali analizzate: {len(filtered_fixtures)}")
 
     output_lines = []
     output_lines.append(f"⚽ *PALINSESTO E QUOTE DEL {DATE}* ⚽\n")
@@ -71,8 +68,6 @@ def avvia_script():
         away = match['teams']['away']['name']
         league = match['league']['name']
         country = match['league']['country']
-        
-        print(f"🔍 Controllo quote per: {home} vs {away}...")
         
         odds_url = f"https://v3.football.api-sports.io/odds?fixture={fixture_id}"
         res_odds = requests.get(odds_url, headers=HEADERS)
@@ -110,7 +105,6 @@ def avvia_script():
             bet_id = bet.get('id')
             bet_name = bet.get('name', '').lower()
             
-            # Scartiamo tutto ciò che riguarda i calciatori (marcatori, tiri, falli dei singoli giocatori)
             if any(k in bet_name for k in ["player", "scorer", "card -", "shots", "fouls", "offsides", "saves"]):
                 continue
             
@@ -124,7 +118,6 @@ def avvia_script():
             elif bet_id == 8:
                 is_target, label = True, "Gol / No Gol"
             elif bet_id == 3:
-                # Prendiamo solo l'Over/Under 1.5 per pulizia
                 values_filtered = [v for v in bet.get('values', []) if "1.5" in str(v.get('value'))]
                 if values_filtered:
                     is_target, label = True, "Over/Under 1.5"
@@ -133,7 +126,6 @@ def avvia_script():
                 is_target, label = True, bet.get('name')
 
             if is_target:
-                # Formattazione ordinata delle quote
                 values_str = [f"*{v.get('value')}*: `{v.get('odd')}`" for v in bet.get('values', [])]
                 line_market = f"  🔹 *{label}:* " + " | ".join(values_str)
                 output_lines.append(line_market)
