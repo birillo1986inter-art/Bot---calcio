@@ -5,9 +5,9 @@ import datetime
 # API Football
 API_KEY = "e8dbbddef0ac48d69d0108a60f167580"
 
-# Telegram (inserisci qui i tuoi dati reali)
-TELEGRAM_BOT_TOKEN = "IL_TUO_TOKEN_TELEGRAM"
-TELEGRAM_CHAT_ID = "IL_TUO_CHAT_ID"
+# Telegram
+TELEGRAM_BOT_TOKEN = "8245305133:AAETS2UpZ5RqqoDFizGSxIzE8Cb5iwrIX2Y"
+TELEGRAM_CHAT_ID = "661442573"
 
 DATE = datetime.date.today().strftime("%Y-%m-%d") 
 HEADERS = {
@@ -23,8 +23,8 @@ PREFERRED_BOOKMAKERS = ["Bet365", "GoldBet", "Lottomatica", "Sisal", "Snai"]
 
 def invia_telegram(messaggio):
     """Funzione per inviare la notifica o il riepilogo sul tuo canale/chat Telegram"""
-    if not TELEGRAM_BOT_TOKEN or TELEGRAM_BOT_TOKEN == "IL_TUO_TOKEN_TELEGRAM":
-        print("⚠️ Token Telegram non configurato correttamente.")
+    if not TELEGRAM_BOT_TOKEN:
+        print("⚠️ Token Telegram non configurato.")
         return
         
     url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
@@ -36,7 +36,7 @@ def invia_telegram(messaggio):
     try:
         response = requests.post(url, json=payload)
         if response.status_code == 200:
-            print("📤 Notificata inviata con successo su Telegram!")
+            print("📤 Notifica inviata con successo su Telegram!")
         else:
             print(f"❌ Errore invio Telegram: {response.text}")
     except Exception as e:
