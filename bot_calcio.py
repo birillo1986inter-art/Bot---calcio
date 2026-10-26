@@ -55,40 +55,50 @@ def calcola_pronostico(mercati_dict):
     return "🎯 *Pronostico:* `Studio consigliato`"
 
 def avvia_script():
-    # 1. Scarichiamo tutte le quote dell'intera giornata in un'unica chiamata massiva
-    odds_url = f"https://v3.football.api-sports.io/odds?date={DATE}"
-    print(f"📥 Scaricamento massivo delle quote per il giorno {DATE}...")
+    # 1. Scarichiamo l'intero palinsesto delle partite del giorno
+    fixtures_url = f"https://v3.football.api-sports.io/fixtures?date={DATE}"
+    print(f"📥 Scaricamento palinsesto completo per il {DATE}...")
     
-    res_odds = requests.get(odds_url, headers=HEADERS)
-    if res_odds.status_code != 200:
-        print(f"❌ Errore nel recupero delle quote: {res_odds.status_code}")
+    res = requests.get(fixtures_url, headers=HEADERS)
+    if res.status_code != 200:
+        print(f"❌ Errore nel palinsesto: {res.status_code}")
         return
         
-    all_odds = res_odds.json().get('response', [])
-    print(f"✅ Trovati dati di quote per {len(all_odds)} partite.")
+    fixtures = res.json().get('response', [])
+    print(f"✅ Trovate {len(fixtures)} partite totali in programma oggi nel mondo.")
+
+    # 2. Scarichiamo anche il blocco massivo delle quote disponibili per associarle velocemente
+    odds_url = f"https://v3.football.api-sports.io/odds?date={DATE}"
+    res_odds = requests.get(odds_url, headers=HEADERS)
+    odds_dict = {}
+    
+    if res_odds.status_code == 200:
+        all_odds = res_odds.json().get('response', [])
+        for item in all_odds:
+            f_id = item.get('fixture', {}).get('id')
+            if f_id:
+                odds_dict[f_id] = item.get('bookmakers', [])
 
     output_lines = []
     output_lines.append(f"⚽ *PALINSESTO E PRONOSTICI DEL {DATE}* ⚽\n")
 
     matches_processed = 0
 
-    for item in all_odds:
-        fixture = item.get('fixture', {})
-        league = item.get('league', {})
-        teams = item.get('teams', {})
-        bookmakers = item.get('bookmakers', [])
-
-        fixture_id = fixture.get('id')
-        utc_date = fixture.get('date', '')
+    for match in fixtures:
+        fixture_id = match['fixture']['id']
+        utc_date = match['fixture']['date']
         match_time = utc_date.split('T')[1][:5] if 'T' in utc_date else ""
 
-        home = teams.get('home', {}).get('name', '')
-        away = teams.get('away', {}).get('name', '')
-        league_name = league.get('name', '')
-        country = league.get('country', '')
-
-        # Seleziona il bookmaker preferito
+        home = match['teams']['home']['name']
+        away = match['teams']['away']['name']
+        league = match['league']['name']
+        country = match['league']['country']
+        
+        match_header = f"\n──────────────────\n🏆 *{country} - {league}*\n⏰ *Orario:* `{match_time}`\n⚽ *{home} vs {away}*"
+        
+        bookmakers = odds_dict.get(fixture_id, [])
         selected_bk = None
+        
         for pref in PREFERRED_BOOKMAKERS:
             for bk in bookmakers:
                 if pref.lower() in bk.get('name', '').lower():
@@ -100,43 +110,45 @@ def avvia_script():
         if not selected_bk and bookmakers:
             selected_bk = bookmakers[0]
 
-        if not selected_bk:
-            continue
-
-        match_header = f"\n──────────────────\n🏆 *{country} - {league_name}*\n⏰ *Orario:* `{match_time}`\n⚽ *{home} vs {away}*\n📊 *Bookmaker:* {selected_bk.get('name')}"
-        
         match_markets = []
         dati_per_pronostico = {}
 
-        for bet in selected_bk.get('bets', []):
-            bet_id = bet.get('id')
-            is_target = False
-            label = ""
-            
-            if bet_id == 1:
-                is_target, label = True, "1X2 Finale"
-                dati_per_pronostico['1'] = {v.get('value'): v.get('odd') for v in bet.get('values', [])}
-            elif bet_id == 12:
-                is_target, label = True, "Doppia Chance"
-            elif bet_id == 8:
-                is_target, label = True, "Gol / No Gol"
-            elif bet_id == 3:
-                values_filtered = [v for v in bet.get('values', []) if str(v.get('value')) in ["Over 1.5", "Under 1.5", "Over 2.5", "Under 2.5"]]
-                if values_filtered:
-                    is_target, label = True, "Under/Over 1.5 & 2.5"
-                    bet['values'] = values_filtered
+        if selected_bk:
+            match_header += f"\n📊 *Bookmaker:* {selected_bk.get('name')}"
+            for bet in selected_bk.get('bets', []):
+                bet_id = bet.get('id')
+                is_target = False
+                label = ""
+                
+                if bet_id == 1:
+                    is_target, label = True, "1X2 Finale"
+                    dati_per_pronostico['1'] = {v.get('value'): v.get('odd') for v in bet.get('values', [])}
+                elif bet_id == 12:
+                    is_target, label = True, "Doppia Chance"
+                elif bet_id == 8:
+                    is_target, label = True, "Gol / No Gol"
+                elif bet_id == 3:
+                    values_filtered = [v for v in bet.get('values', []) if str(v.get('value')) in ["Over 1.5", "Under 1.5", "Over 2.5", "Under 2.5"]]
+                    if values_filtered:
+                        is_target, label = True, "Under/Over 1.5 & 2.5"
+                        bet['values'] = values_filtered
 
-            if is_target:
-                values_str = [f"*{v.get('value')}*: `{v.get('odd')}`" for v in bet.get('values', [])]
-                line_market = f"  🔹 *{label}:* " + " | ".join(values_str)
-                match_markets.append(line_market)
+                if is_target:
+                    values_str = [f"*{v.get('value')}*: `{v.get('odd')}`" for v in bet.get('values', [])]
+                    line_market = f"  🔹 *{label}:* " + " | ".join(values_str)
+                    match_markets.append(line_market)
 
-        if match_markets:
-            output_lines.append(match_header)
+        output_lines.append(match_header)
+        
+        if selected_bk and match_markets:
             pronostico_line = calcola_pronostico(dati_per_pronostico)
             output_lines.append(f"  {pronostico_line}")
             output_lines.extend(match_markets)
-            matches_processed += 1
+        else:
+            output_lines.append(f"  📊 *Bookmaker:* `Quote in fase di pubblicazione`")
+            output_lines.append(f"  ⏳ *Stato:* Partita in programma oggi (quote non ancora disponibili)")
+
+        matches_processed += 1
 
     testo_finale = "\n".join(output_lines)
 
@@ -144,7 +156,7 @@ def avvia_script():
     with open(filename, "w", encoding="utf-8") as f:
         f.write(testo_finale)
         
-    print(f"\n✨ Fatto! Elaborate {matches_processed} partite con quote e pronostici. Salvate in: {filename}")
+    print(f"\n✨ Fatto! Elaborate {matches_processed} partite del palinsesto. Salvate in: {filename}")
     invia_telegram_lunghi(testo_finale)
 
 if __name__ == "__main__":
