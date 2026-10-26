@@ -1,1 +1,24 @@
+name: Bot Calcio Giornaliero
 
+on:
+  schedule:
+    - cron: '0 10 * * *'  # Tutti i giorni alle 11:00 ora italiana
+  workflow_dispatch:      # Per avviarlo manualmente quando vuoi
+
+jobs:
+  run-bot:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Sponsa il repository
+        uses: actions/checkout@v3
+
+      - name: Configura Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Installa le dipendenze
+        run: pip install requests
+
+      - name: Esegui lo script del bot
+        run: python bot_calcio.py
