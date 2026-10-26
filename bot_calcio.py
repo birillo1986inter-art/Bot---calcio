@@ -19,14 +19,12 @@ PREFERRED_BOOKMAKERS = ["Bet365", "GoldBet", "Lottomatica", "Sisal", "Snai"]
 # ==================================================
 
 def invia_telegram_lunghi(testo):
-    """Funzione per inviare messaggi anche lunghi dividendoli se necessario per i limiti di Telegram"""
+    """Funzione per inviare messaggi lunghi dividendoli nei limiti di Telegram"""
     if not TELEGRAM_BOT_TOKEN:
         print("⚠️ Token Telegram non configurato.")
         return
         
     url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
-    
-    # Telegram accetta massimo circa 4000 caratteri per messaggio, dividiamo se serve
     max_length = 4000
     chunks = [testo[i:i+max_length] for i in range(0, len(testo), max_length)]
     
@@ -103,16 +101,18 @@ def avvia_script():
         if not selected_bk and bookmakers:
             selected_bk = bookmakers[0]
                 
-        match_header = f"\n📌 *[{country} - {league}]*\n*{home} vs {away}*"
-        bookie_info = f"   📊 *Bookmaker:* {selected_bk.get('name')}"
-        
+        # Intestazione della partita pulita e separata da una linea
+        match_header = f"\n──────────────────\n🏆 *{country} - {league}*\n⚽ *{home} vs {away}*\n📊 *Bookmaker:* {selected_bk.get('name')}"
         output_lines.append(match_header)
-        output_lines.append(bookie_info)
         
-        # Estrazione dei mercati richiesti
+        # Filtriamo solo i mercati puliti e importanti (escludendo i Giocatori/Player Props)
         for bet in selected_bk.get('bets', []):
             bet_id = bet.get('id')
-            bet_name = bet.get('name')
+            bet_name = bet.get('name', '').lower()
+            
+            # Scartiamo tutto ciò che riguarda i calciatori (marcatori, tiri, falli dei singoli giocatori)
+            if any(k in bet_name for k in ["player", "scorer", "card -", "shots", "fouls", "offsides", "saves"]):
+                continue
             
             is_target = False
             label = ""
@@ -124,29 +124,29 @@ def avvia_script():
             elif bet_id == 8:
                 is_target, label = True, "Gol / No Gol"
             elif bet_id == 3:
+                # Prendiamo solo l'Over/Under 1.5 per pulizia
                 values_filtered = [v for v in bet.get('values', []) if "1.5" in str(v.get('value'))]
                 if values_filtered:
                     is_target, label = True, "Over/Under 1.5"
                     bet['values'] = values_filtered
-            elif any(keyword in bet_name.lower() for keyword in ["multi", "combo", "goal", "score"]):
-                is_target, label = True, bet_name
+            elif any(keyword in bet_name for keyword in ["multi", "combo", "goal", "score", "over/under"]):
+                is_target, label = True, bet.get('name')
 
             if is_target:
-                values_str = [f"{v.get('value')}: {v.get('odd')}" for v in bet.get('values', [])]
-                line_market = f"      🔹 *{label}:* {', '.join(values_str)}"
+                # Formattazione ordinata delle quote
+                values_str = [f"*{v.get('value')}*: `{v.get('odd')}`" for v in bet.get('values', [])]
+                line_market = f"  🔹 *{label}:* " + " | ".join(values_str)
                 output_lines.append(line_market)
 
     # Unisce tutto il testo
     testo_finale = "\n".join(output_lines)
 
-    # Scrittura del file di testo locale su GitHub
+    # Salvataggio e invio
     filename = f"palinsesto_quote_{DATE}.txt"
     with open(filename, "w", encoding="utf-8") as f:
         f.write(testo_finale)
         
     print(f"\n✨ Fatto! Risultati salvati nel file: {filename}")
-    
-    # Invio diretto di tutto il palinsesto su Telegram
     invia_telegram_lunghi(testo_finale)
 
 if __name__ == "__main__":
