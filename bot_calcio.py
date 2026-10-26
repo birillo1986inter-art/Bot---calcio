@@ -2,10 +2,7 @@ import requests
 import datetime
 
 # ================= CONFIGURAZIONE =================
-# API Football
 API_KEY = "e8dbbddef0ac48d69d0108a60f167580"
-
-# Telegram
 TELEGRAM_BOT_TOKEN = "8245305133:AAETS2UpZ5RqqoDFizGSxIzE8Cb5iwrIX2Y"
 TELEGRAM_CHAT_ID = "661442573"
 
@@ -21,30 +18,36 @@ TARGET_LEAGUES = [135, 136, 39, 140, 78, 61, 2, 3]
 PREFERRED_BOOKMAKERS = ["Bet365", "GoldBet", "Lottomatica", "Sisal", "Snai"]
 # ==================================================
 
-def invia_telegram(messaggio):
-    """Funzione per inviare la notifica o il riepilogo sul tuo canale/chat Telegram"""
+def invia_telegram_lunghi(testo):
+    """Funzione per inviare messaggi anche lunghi dividendoli se necessario per i limiti di Telegram"""
     if not TELEGRAM_BOT_TOKEN:
         print("⚠️ Token Telegram non configurato.")
         return
         
     url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
-    payload = {
-        "chat_id": TELEGRAM_CHAT_ID, 
-        "text": messaggio, 
-        "parse_mode": "Markdown"
-    }
-    try:
-        response = requests.post(url, json=payload)
-        if response.status_code == 200:
-            print("📤 Notifica inviata con successo su Telegram!")
-        else:
-            print(f"❌ Errore invio Telegram: {response.text}")
-    except Exception as e:
-        print(f"⚠️ Errore di connessione a Telegram: {e}")
+    
+    # Telegram accetta massimo circa 4000 caratteri per messaggio, dividiamo se serve
+    max_length = 4000
+    chunks = [testo[i:i+max_length] for i in range(0, len(testo), max_length)]
+    
+    for chunk in chunks:
+        payload = {
+            "chat_id": TELEGRAM_CHAT_ID, 
+            "text": chunk, 
+            "parse_mode": "Markdown"
+        }
+        try:
+            response = requests.post(url, json=payload)
+            if response.status_code == 200:
+                print("📤 Messaggio inviato con successo su Telegram!")
+            else:
+                print(f"❌ Errore invio Telegram: {response.text}")
+        except Exception as e:
+            print(f"⚠️ Errore di connessione a Telegram: {e}")
 
 def avvia_script():
     fixtures_url = f"https://v3.football.api-sports.io/fixtures?date={DATE}"
-    print(f"📥 [1 Chiamata] Scaricamento palinsesto per il {DATE}...")
+    print(f"📥 Scaricamento palinsesto per il {DATE}...")
     
     res = requests.get(fixtures_url, headers=HEADERS)
     if res.status_code != 200:
@@ -60,11 +63,9 @@ def avvia_script():
         if not TARGET_LEAGUES or f['league']['id'] in TARGET_LEAGUES
     ]
     print(f"🎯 Partite filtrate per le tue leghe d'interesse: {len(filtered_fixtures)}")
-    print(f"⚠️ Questo script consumerà circa {len(filtered_fixtures) + 1} chiamate API su 100.\n")
-    print("-" * 50)
 
     output_lines = []
-    output_lines.append(f"=== PALINSESTO E QUOTE DEL {DATE} ===\n")
+    output_lines.append(f"⚽ *PALINSESTO E QUOTE DEL {DATE}* ⚽\n")
 
     for match in filtered_fixtures:
         fixture_id = match['fixture']['id']
@@ -83,14 +84,13 @@ def avvia_script():
             
         odds_data = res_odds.json().get('response', [])
         if not odds_data:
-            print("   ⚠️ Nessuna quota trovata.")
             continue
             
         bookmakers = odds_data[0].get('bookmakers', [])
         if not bookmakers:
             continue
             
-        # Ricerca del bookmaker in base alla priorità stabilita
+        # Ricerca del bookmaker in base alla priorità
         selected_bk = None
         for pref in PREFERRED_BOOKMAKERS:
             for bk in bookmakers:
@@ -103,8 +103,8 @@ def avvia_script():
         if not selected_bk and bookmakers:
             selected_bk = bookmakers[0]
                 
-        match_header = f"\n📌 [{country} - {league}] {home} vs {away} (ID: {fixture_id})"
-        bookie_info = f"   📊 Bookmaker utilizzato: {selected_bk.get('name')}"
+        match_header = f"\n📌 *[{country} - {league}]*\n*{home} vs {away}*"
+        bookie_info = f"   📊 *Bookmaker:* {selected_bk.get('name')}"
         
         output_lines.append(match_header)
         output_lines.append(bookie_info)
@@ -133,18 +133,21 @@ def avvia_script():
 
             if is_target:
                 values_str = [f"{v.get('value')}: {v.get('odd')}" for v in bet.get('values', [])]
-                line_market = f"      🔹 {label}: {', '.join(values_str)}"
+                line_market = f"      🔹 *{label}:* {', '.join(values_str)}"
                 output_lines.append(line_market)
 
-    # Scrittura del file di testo locale
+    # Unisce tutto il testo
+    testo_finale = "\n".join(output_lines)
+
+    # Scrittura del file di testo locale su GitHub
     filename = f"palinsesto_quote_{DATE}.txt"
     with open(filename, "w", encoding="utf-8") as f:
-        f.write("\n".join(output_lines))
+        f.write(testo_finale)
         
-    print(f"\n✨ Fatto! Risultati salvati con successo nel file: {filename}")
+    print(f"\n✨ Fatto! Risultati salvati nel file: {filename}")
     
-    # Invio della notifica su Telegram
-    invia_telegram(f"⚽ *Palinsesto Calcio generato!*\nData: {DATE}\nFile salvato con successo.")
+    # Invio diretto di tutto il palinsesto su Telegram
+    invia_telegram_lunghi(testo_finale)
 
 if __name__ == "__main__":
     avvia_script()
