@@ -8,7 +8,7 @@ HEADERS = {
     'x-rapidapi-host': 'v3.football.api-sports.io'
 }
 
-def genera_palinsesto_definitivo():
+def genera_palinsesto():
     oggi = datetime.now().strftime("%Y-%m-%d")
     url = f"https://v3.football.api-sports.io/fixtures?date={oggi}"
     
@@ -25,7 +25,6 @@ def genera_palinsesto_definitivo():
                 league_name = league_info.get("name", "Altro")
                 country = league_info.get("country", "Internazionale")
                 
-                # Chiave unificata per il campionato
                 chiave_lega = f"{country} - {league_name}"
                 
                 if chiave_lega not in dati_finali:
@@ -55,15 +54,16 @@ def genera_palinsesto_definitivo():
                 }
                 dati_finali[chiave_lega].append(match_data)
                 
-        print(f"Trovate competizioni: {len(dati_finali)}")
+        print(f"Competizioni caricate con successo: {len(dati_finali)}")
         
     except Exception as e:
-        print(f"Errore: {e}")
+        print(f"Errore durante la chiamata API: {e}")
 
+    # Scrittura del file JSON
     with open("dati_calcio.json", "w", encoding="utf-8") as f:
         json.dump(dati_finali, f, ensure_ascii=False, indent=4)
     
-    print("File dati_calcio.json aggiornato con successo.")
+    print("Salvataggio completato.")
 
 if __name__ == "__main__":
-    genera_palinsesto_definitivo()
+    genera_palinsesto()
