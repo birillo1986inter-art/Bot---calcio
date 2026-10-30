@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quantum Cup Football - Dashboard Globale</title>
+    <title>Quantum Cup Football - Dashboard</title>
     <style>
         :root {
             --bg-main: #0b0f19;
@@ -16,66 +16,94 @@
             --text-muted: #94a3b8;
             --border: #1e293b;
         }
+        
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, sans-serif; }
-        body { background-color: var(--bg-main); color: var(--text-main); padding: 12px; max-width: 1200px; margin: 0 auto; }
+        body { background-color: var(--bg-main); color: var(--text-main); padding: 12px; max-width: 1400px; margin: 0 auto; }
 
         header {
             text-align: center; margin-bottom: 16px; padding: 16px;
             background: var(--bg-card); border-radius: 12px; border: 1px solid var(--border);
         }
-        h1 { font-size: 1.5rem; color: var(--accent-gold); }
-        .subtitle { color: var(--text-muted); font-size: 0.8rem; margin-top: 4px; }
+        h1 { font-size: 1.6rem; color: var(--accent-gold); }
+        .subtitle { color: var(--text-muted); font-size: 0.85rem; margin-top: 4px; }
 
-        .nav-leagues {
-            display: flex; gap: 8px; overflow-x: auto; padding-bottom: 8px; margin-bottom: 16px;
-        }
+        /* Layout a griglia: Sidebar a sinistra, Contenuto a destra */
+        .dashboard-container { display: grid; grid-template-columns: 1fr; gap: 16px; }
+        @media (min-width: 900px) { .dashboard-container { grid-template-columns: 300px 1fr; } }
+
+        .sidebar { background: var(--bg-card); border-radius: 12px; padding: 14px; border: 1px solid var(--border); height: fit-content; }
+        .sidebar h2 { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.5px; }
+        .league-list { display: flex; flex-direction: column; gap: 8px; max-height: 600px; overflow-y: auto; }
+
         .league-btn {
-            background: var(--bg-card); color: var(--text-main); border: 1px solid var(--border);
-            padding: 8px 14px; border-radius: 8px; white-space: nowrap; cursor: pointer; font-size: 0.85rem; font-weight: 600;
+            display: flex; align-items: center; gap: 10px; background: var(--bg-main);
+            color: var(--text-main); padding: 10px 12px; border-radius: 8px;
+            border: 1px solid var(--border); cursor: pointer; font-weight: 500; width: 100%; text-align: left; font-size: 0.9rem;
         }
-        .league-btn.active { background: var(--accent-blue); border-color: var(--accent-blue); }
+        .league-btn:hover, .league-btn.active { background: var(--bg-hover); border-color: var(--accent-blue); }
+
+        .main-content { display: flex; flex-direction: column; gap: 16px; }
+        .content-header {
+            background: var(--bg-card); padding: 14px 18px; border-radius: 12px;
+            border: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center;
+        }
 
         .match-card {
-            background: var(--bg-card); border-radius: 12px; padding: 14px;
-            border: 1px solid var(--border); margin-bottom: 12px; display: flex; flex-direction: column; gap: 10px;
+            background: var(--bg-card); border-radius: 12px; padding: 16px;
+            border: 1px solid var(--border); display: flex; flex-direction: column; gap: 12px;
         }
-        .match-header { display: flex; justify-content: space-between; color: var(--text-muted); font-size: 0.75rem; font-weight: 600; }
-        .match-teams { display: flex; justify-content: space-between; align-items: center; font-size: 1rem; font-weight: bold; }
-        .vs { color: var(--accent-gold); font-size: 0.8rem; }
+        .match-header { display: flex; justify-content: space-between; color: var(--text-muted); font-size: 0.8rem; font-weight: 600; }
+        .match-teams { display: flex; justify-content: space-between; align-items: center; font-size: 1.1rem; font-weight: bold; }
+        .vs { color: var(--accent-gold); font-size: 0.85rem; }
 
         .odds-grid {
-            display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px;
-            background: var(--bg-main); padding: 8px; border-radius: 8px;
+            display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px;
+            background: var(--bg-main); padding: 10px; border-radius: 8px;
         }
         .odd-box {
             display: flex; flex-direction: column; align-items: center;
-            background: var(--bg-card); padding: 6px; border-radius: 6px; border: 1px solid var(--border); font-size: 0.75rem;
+            background: var(--bg-card); padding: 6px; border-radius: 6px; border: 1px solid var(--border); font-size: 0.8rem;
         }
-        .odd-label { color: var(--text-muted); font-size: 0.65rem; }
+        .odd-label { color: var(--text-muted); font-size: 0.7rem; }
         .odd-val { color: var(--accent-blue); font-weight: bold; margin-top: 2px; }
 
         .prediction-box {
             background: rgba(37, 99, 235, 0.1); border: 1px solid var(--accent-blue);
-            border-radius: 8px; padding: 10px; display: flex; flex-direction: column; gap: 4px;
+            border-radius: 8px; padding: 12px; display: flex; flex-direction: column; gap: 6px;
         }
-        .prono-title { color: var(--accent-gold); font-size: 0.75rem; font-weight: bold; text-transform: uppercase; }
-        .prono-badge { background: var(--accent-green); color: black; font-weight: bold; padding: 3px 8px; border-radius: 4px; font-size: 0.8rem; width: fit-content; }
-        .prono-stats { color: var(--text-muted); font-size: 0.75rem; }
-        .loading { text-align: center; color: var(--text-muted); padding: 20px; }
+        .prono-title { color: var(--accent-gold); font-size: 0.85rem; font-weight: bold; text-transform: uppercase; }
+        .prono-badge { background: var(--accent-green); color: black; font-weight: bold; padding: 4px 10px; border-radius: 4px; font-size: 0.85rem; width: fit-content; }
+        .prono-stats { color: var(--text-muted); font-size: 0.8rem; }
+        .loading { text-align: center; color: var(--text-muted); padding: 20px; font-size: 0.9rem; }
     </style>
 </head>
 <body>
 
     <header>
         <h1>Quantum Cup Football</h1>
-        <p class="subtitle">Palinsesto Giornaliero Globale</p>
+        <p class="subtitle">Palinsesto Giornaliero Globale & Analisi Live</p>
     </header>
 
-    <!-- I pulsanti dei campionati si generano da soli in base alle partite di oggi -->
-    <div class="nav-leagues" id="navLeagues"></div>
+    <div class="dashboard-container">
+        <!-- Sidebar a sinistra con la lista dei campionati -->
+        <div class="sidebar">
+            <h2>Competizioni</h2>
+            <div class="league-list" id="leagueListContainer">
+                <div class="loading">Caricamento...</div>
+            </div>
+        </div>
 
-    <div id="matchesContainer">
-        <div class="loading">Caricamento palinsesto in corso...</div>
+        <!-- Sezione principale con le partite -->
+        <div class="main-content">
+            <div class="content-header">
+                <h3 id="selectedLeagueTitle" style="font-size: 1rem; color: var(--accent-gold);">Seleziona un campionato</h3>
+                <span id="matchCount" style="color: var(--accent-green); font-weight: bold; font-size: 0.85rem;">0 Match</span>
+            </div>
+
+            <div id="matchesContainer">
+                <div class="loading">In attesa di selezione...</div>
+            </div>
+        </div>
     </div>
 
     <script>
@@ -83,8 +111,8 @@
         let currentLeague = '';
 
         async function initDashboard() {
-            const container = document.getElementById('matchesContainer');
-            const navContainer = document.getElementById('navLeagues');
+            const leagueContainer = document.getElementById('leagueListContainer');
+            const matchesContainer = document.getElementById('matchesContainer');
 
             try {
                 const response = await fetch('./dati_calcio.json?v=' + new Date().getTime());
@@ -92,38 +120,67 @@
                 const leagues = Object.keys(globalData);
 
                 if (leagues.length === 0) {
-                    navContainer.innerHTML = '';
-                    container.innerHTML = '<div class="loading">Nessuna partita in programma oggi nel palinsesto globale.</div>';
+                    leagueContainer.innerHTML = '<div style="color: var(--text-muted); font-size: 0.8rem;">Nessuna competizione oggi.</div>';
+                    matchesContainer.innerHTML = '<div class="loading">Nessuna partita in programma oggi nel palinsesto globale.</div>';
                     return;
                 }
 
-                // Genera i pulsanti per ogni campionato trovato oggi
-                let navHtml = '';
+                let htmlList = '';
                 leagues.forEach((league, index) => {
                     const activeClass = index === 0 ? 'active' : '';
                     if (index === 0) currentLeague = league;
-                    navHtml += `<button class="league-btn ${activeClass}" onclick="selectLeague('${league}', this)">${league}</button>`;
-                });
-                navContainer.innerHTML = navHtml;
+                    
+                    // Assegna un'icona/bandierina di default in base al nome o alla nazione
+                    let icon = '🏆';
+                    if (league.includes('Italy') || league.includes('Italia')) icon = '🇮🇹';
+                    else if (league.includes('England') || league.includes('Inghilterra')) icon = '🏴󠁧󠁢󠁥󠁮󠁧󠁿';
+                    else if (league.includes('Spain') || league.includes('Spagna')) icon = '🇪🇸';
+                    else if (league.includes('Germany') || league.includes('Germania')) icon = '🇩🇪';
+                    else if (league.includes('France') || league.includes('Francia')) icon = '🇫🇷';
+                    else if (league.includes('Champions')) icon = '⭐';
+                    else if (league.includes('World') || league.includes('International')) icon = '🌍';
 
-                // Mostra il primo campionato di default
-                renderMatches(currentLeague);
+                    htmlList += `
+                        <button class="league-btn ${activeClass}" onclick="selectLeague('${league}', this)">
+                            <span>${icon}</span>
+                            <span style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">${league}</span>
+                        </button>
+                    `;
+                });
+
+                leagueContainer.innerHTML = htmlList;
+
+                // Carica il primo campionato disponibile
+                if (leagues.length > 0) {
+                    selectLeague(leagues[0], null);
+                }
 
             } catch (error) {
-                container.innerHTML = '<div class="loading">Errore nel caricamento del file JSON.</div>';
+                leagueContainer.innerHTML = '<div style="color: var(--text-muted);">Errore dati</div>';
+                matchesContainer.innerHTML = '<div class="loading">Impossibile leggere il file JSON.</div>';
             }
         }
 
         function selectLeague(league, btnElement) {
-            document.querySelectorAll('.league-btn').forEach(b => b.classList.remove('active'));
-            if (btnElement) btnElement.classList.add('active');
+            if (btnElement) {
+                document.querySelectorAll('.league-btn').forEach(b => b.classList.remove('active'));
+                btnElement.classList.add('active');
+            } else {
+                // Seleziona il primo pulsante corrispondente se avviato via codice
+                const buttons = document.querySelectorAll('.league-btn');
+                if (buttons.length > 0) buttons[0].classList.add('active');
+            }
+
             currentLeague = league;
+            document.getElementById('selectedLeagueTitle').innerText = league;
             renderMatches(league);
         }
 
         function renderMatches(league) {
             const container = document.getElementById('matchesContainer');
             const matches = globalData[league] || [];
+            
+            document.getElementById('matchCount').innerText = `${matches.length} Match`;
 
             if (matches.length === 0) {
                 container.innerHTML = '<div class="loading">Nessuna partita per questa competizione oggi.</div>';
@@ -136,13 +193,14 @@
                     <div class="match-card">
                         <div class="match-header">
                             <span>ORARIO: ${m.time}</span>
-                            <span>PALINSESTO GIORNALIERO</span>
+                            <span>ANALISI LIVE</span>
                         </div>
                         <div class="match-teams">
                             <span>${m.home}</span>
                             <span class="vs">VS</span>
                             <span>${m.away}</span>
                         </div>
+
                         <div class="odds-grid">
                             <div class="odd-box"><span class="odd-label">1</span><span class="odd-val">${m.odds['1']}</span></div>
                             <div class="odd-box"><span class="odd-label">X</span><span class="odd-val">${m.odds['X']}</span></div>
@@ -152,8 +210,9 @@
                             <div class="odd-box"><span class="odd-label">X2</span><span class="odd-val">${m.odds['X2']}</span></div>
                             <div class="odd-box"><span class="odd-label">O 1.5</span><span class="odd-val">${m.odds['O1.5']}</span></div>
                             <div class="odd-box"><span class="odd-label">O 2.5</span><span class="odd-val">${m.odds['O2.5']}</span></div>
-                            <div class="odd-box"><span class="odd-label">O 3.5</span><span class="odd-val">${m.odds['O3.5']}</span></div>
+                            <div class="odd-box"><span class="odd-label">O 3.5</span><span class="odd-val">${m.odds['3.5'] || m.odds['O3.5']}</span></div>
                         </div>
+
                         <div class="prediction-box">
                             <span class="prono-title">Pronostico (Affidabilità ${m.confidence})</span>
                             <span class="prono-badge">${m.prono}</span>
@@ -162,10 +221,11 @@
                     </div>
                 `;
             });
+
             container.innerHTML = html;
         }
 
-        // Avvio all'apertura
+        // Avvio automatico all'apertura
         initDashboard();
     </script>
 </body>
