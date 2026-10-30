@@ -139,9 +139,11 @@
                 leagues.forEach((league, index) => {
                     const activeClass = index === 0 ? 'active' : '';
                     const icon = getFlag(league);
+                    // Sostituisce i singoli apici per evitare problemi nel JavaScript inline
+                    const safeLeague = league.replace(/'/g, "\\'");
                     
                     htmlList += `
-                        <button class="league-btn ${activeClass}" onclick="selectLeague('${league.replace(/'/g, "\\'")}', this)">
+                        <button class="league-btn ${activeClass}" onclick="selectLeague('${safeLeague}', this)">
                             <span>${icon}</span>
                             <span style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">${league}</span>
                         </button>
@@ -163,7 +165,6 @@
                 btnElement.classList.add('active');
             }
 
-            document.getElementById('selectedLeagueTitleinnerText', league);
             document.getElementById('selectedLeagueTitle').innerText = league;
             
             const container = document.getElementById('matchesContainer');
