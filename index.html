@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quantum Cup Football - Dashboard</title>
+    <title>Quantum Cup Football - Dashboard Globale</title>
     <style>
         :root {
             --bg-main: #0b0f19;
@@ -68,83 +68,105 @@
 
     <header>
         <h1>Quantum Cup Football</h1>
-        <p class="subtitle">Dashboard Analisi Calcio & Pronostici</p>
+        <p class="subtitle">Palinsesto Giornaliero Globale</p>
     </header>
 
-    <div class="nav-leagues">
-        <button class="league-btn active" onclick="loadLeague('ITA', this)">🇮🇹 Serie A</button>
-        <button class="league-btn" onclick="loadLeague('ENG', this)">🏴󠁧󠁢󠁥󠁮󠁧󠁿 Premier</button>
-        <button class="league-btn" onclick="loadLeague('ESP', this)">🇪🇸 La Liga</button>
-        <button class="league-btn" onclick="loadLeague('GER', this)">🇩🇪 Bundesliga</button>
-        <button class="league-btn" onclick="loadLeague('FRA', this)">🇫🇷 Ligue 1</button>
-    </div>
+    <!-- I pulsanti dei campionati si generano da soli in base alle partite di oggi -->
+    <div class="nav-leagues" id="navLeagues"></div>
 
     <div id="matchesContainer">
         <div class="loading">Caricamento palinsesto in corso...</div>
     </div>
 
     <script>
-        let currentLeague = 'ITA';
+        let globalData = {};
+        let currentLeague = '';
 
-        async function loadLeague(code, btnElement) {
-            if (btnElement) {
-                document.querySelectorAll('.league-btn').forEach(b => b.classList.remove('active'));
-                btnElement.classList.add('active');
-            }
-            currentLeague = code;
+        async function initDashboard() {
             const container = document.getElementById('matchesContainer');
-            container.innerHTML = '<div class="loading">Aggiornamento dati...</div>';
+            const navContainer = document.getElementById('navLeagues');
 
             try {
                 const response = await fetch('./dati_calcio.json?v=' + new Date().getTime());
-                const data = await response.json();
-                const matches = data[code] || [];
+                globalData = await response.json();
+                const leagues = Object.keys(globalData);
 
-                if (matches.length === 0) {
-                    container.innerHTML = '<div class="loading">Nessuna partita disponibile al momento per questo campionato.</div>';
+                if (leagues.length === 0) {
+                    navContainer.innerHTML = '';
+                    container.innerHTML = '<div class="loading">Nessuna partita in programma oggi nel palinsesto globale.</div>';
                     return;
                 }
 
-                let html = '';
-                matches.forEach(m => {
-                    html += `
-                        <div class="match-card">
-                            <div class="match-header">
-                                <span>ORARIO: ${m.time}</span>
-                                <span>ANALISI LIVE</span>
-                            </div>
-                            <div class="match-teams">
-                                <span>${m.home}</span>
-                                <span class="vs">VS</span>
-                                <span>${m.away}</span>
-                            </div>
-                            <div class="odds-grid">
-                                <div class="odd-box"><span class="odd-label">1</span><span class="odd-val">${m.odds['1']}</span></div>
-                                <div class="odd-box"><span class="odd-label">X</span><span class="odd-val">${m.odds['X']}</span></div>
-                                <div class="odd-box"><span class="odd-label">2</span><span class="odd-val">${m.odds['2']}</span></div>
-                                <div class="odd-box"><span class="odd-label">1X</span><span class="odd-val">${m.odds['1X']}</span></div>
-                                <div class="odd-box"><span class="odd-label">12</span><span class="odd-val">${m.odds['12']}</span></div>
-                                <div class="odd-box"><span class="odd-label">X2</span><span class="odd-val">${m.odds['X2']}</span></div>
-                                <div class="odd-box"><span class="odd-label">O 1.5</span><span class="odd-val">${m.odds['O1.5']}</span></div>
-                                <div class="odd-box"><span class="odd-label">O 2.5</span><span class="odd-val">${m.odds['O2.5']}</span></div>
-                                <div class="odd-box"><span class="odd-label">O 3.5</span><span class="odd-val">${m.odds['O3.5']}</span></div>
-                            </div>
-                            <div class="prediction-box">
-                                <span class="prono-title">Pronostico (Affidabilità ${m.confidence})</span>
-                                <span class="prono-badge">${m.prono}</span>
-                                <span class="prono-stats">${m.desc}</span>
-                            </div>
-                        </div>
-                    `;
+                // Genera i pulsanti per ogni campionato trovato oggi
+                let navHtml = '';
+                leagues.forEach((league, index) => {
+                    const activeClass = index === 0 ? 'active' : '';
+                    if (index === 0) currentLeague = league;
+                    navHtml += `<button class="league-btn ${activeClass}" onclick="selectLeague('${league}', this)">${league}</button>`;
                 });
-                container.innerHTML = html;
+                navContainer.innerHTML = navHtml;
+
+                // Mostra il primo campionato di default
+                renderMatches(currentLeague);
+
             } catch (error) {
-                container.innerHTML = '<div class="loading">Errore nel caricamento dei dati JSON. Riprova tra poco.</div>';
+                container.innerHTML = '<div class="loading">Errore nel caricamento del file JSON.</div>';
             }
         }
 
-        // Avvio automatico al caricamento
-        loadLeague('ITA', null);
+        function selectLeague(league, btnElement) {
+            document.querySelectorAll('.league-btn').forEach(b => b.classList.remove('active'));
+            if (btnElement) btnElement.classList.add('active');
+            currentLeague = league;
+            renderMatches(league);
+        }
+
+        function renderMatches(league) {
+            const container = document.getElementById('matchesContainer');
+            const matches = globalData[league] || [];
+
+            if (matches.length === 0) {
+                container.innerHTML = '<div class="loading">Nessuna partita per questa competizione oggi.</div>';
+                return;
+            }
+
+            let html = '';
+            matches.forEach(m => {
+                html += `
+                    <div class="match-card">
+                        <div class="match-header">
+                            <span>ORARIO: ${m.time}</span>
+                            <span>PALINSESTO GIORNALIERO</span>
+                        </div>
+                        <div class="match-teams">
+                            <span>${m.home}</span>
+                            <span class="vs">VS</span>
+                            <span>${m.away}</span>
+                        </div>
+                        <div class="odds-grid">
+                            <div class="odd-box"><span class="odd-label">1</span><span class="odd-val">${m.odds['1']}</span></div>
+                            <div class="odd-box"><span class="odd-label">X</span><span class="odd-val">${m.odds['X']}</span></div>
+                            <div class="odd-box"><span class="odd-label">2</span><span class="odd-val">${m.odds['2']}</span></div>
+                            <div class="odd-box"><span class="odd-label">1X</span><span class="odd-val">${m.odds['1X']}</span></div>
+                            <div class="odd-box"><span class="odd-label">12</span><span class="odd-val">${m.odds['12']}</span></div>
+                            <div class="odd-box"><span class="odd-label">X2</span><span class="odd-val">${m.odds['X2']}</span></div>
+                            <div class="odd-box"><span class="odd-label">O 1.5</span><span class="odd-val">${m.odds['O1.5']}</span></div>
+                            <div class="odd-box"><span class="odd-label">O 2.5</span><span class="odd-val">${m.odds['O2.5']}</span></div>
+                            <div class="odd-box"><span class="odd-label">O 3.5</span><span class="odd-val">${m.odds['O3.5']}</span></div>
+                        </div>
+                        <div class="prediction-box">
+                            <span class="prono-title">Pronostico (Affidabilità ${m.confidence})</span>
+                            <span class="prono-badge">${m.prono}</span>
+                            <span class="prono-stats">${m.desc}</span>
+                        </div>
+                    </div>
+                `;
+            });
+            container.innerHTML = html;
+        }
+
+        // Avvio all'apertura
+        initDashboard();
     </script>
 </body>
 </html>
