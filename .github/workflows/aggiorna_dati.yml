@@ -1,4 +1,4 @@
-name: Aggiorna Dati Calcio 2
+name: Aggiorna Dati Calcio
 
 on:
   workflow_dispatch:
