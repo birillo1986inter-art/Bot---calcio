@@ -1,0 +1,33 @@
+name: Aggiorna Dati Calcio
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 8 * * *'
+
+jobs:
+  run-bot:
+  runs-on: ubuntu-latest
+  steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.10'
+
+    - name: Installa dipendenze
+      run: |
+        pip install requests
+
+    - name: Esegui Bot Calcio
+      run: python bot_calcio.py
+
+    - name: Salva e aggiorna i dati nel sito
+      run: |
+        git config --global user.name "Bot Calcio"
+        git config --global user.email "bot@github.com"
+        git add dati_calcio.json
+        git commit -m "Aggiornamento automatico palinsesto e quote" || exit 0
+        git push
