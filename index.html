@@ -27,18 +27,17 @@
         h1 { font-size: 1.6rem; color: var(--accent-gold); }
         .subtitle { color: var(--text-muted); font-size: 0.85rem; margin-top: 4px; }
 
-        /* Layout a griglia: Sidebar a sinistra, Contenuto a destra */
         .dashboard-container { display: grid; grid-template-columns: 1fr; gap: 16px; }
         @media (min-width: 900px) { .dashboard-container { grid-template-columns: 300px 1fr; } }
 
         .sidebar { background: var(--bg-card); border-radius: 12px; padding: 14px; border: 1px solid var(--border); height: fit-content; }
-        .sidebar h2 { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.5px; }
-        .league-list { display: flex; flex-direction: column; gap: 8px; max-height: 600px; overflow-y: auto; }
+        .sidebar h2 { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 12px; text-transform: uppercase; }
+        .league-list { display: flex; flex-direction: column; gap: 8px; max-height: 650px; overflow-y: auto; }
 
         .league-btn {
             display: flex; align-items: center; gap: 10px; background: var(--bg-main);
             color: var(--text-main); padding: 10px 12px; border-radius: 8px;
-            border: 1px solid var(--border); cursor: pointer; font-weight: 500; width: 100%; text-align: left; font-size: 0.9rem;
+            border: 1px solid var(--border); cursor: pointer; font-weight: 500; width: 100%; text-align: left; font-size: 0.85rem;
         }
         .league-btn:hover, .league-btn.active { background: var(--bg-hover); border-color: var(--accent-blue); }
 
@@ -85,7 +84,6 @@
     </header>
 
     <div class="dashboard-container">
-        <!-- Sidebar a sinistra con la lista dei campionati -->
         <div class="sidebar">
             <h2>Competizioni</h2>
             <div class="league-list" id="leagueListContainer">
@@ -93,7 +91,6 @@
             </div>
         </div>
 
-        <!-- Sezione principale con le partite -->
         <div class="main-content">
             <div class="content-header">
                 <h3 id="selectedLeagueTitle" style="font-size: 1rem; color: var(--accent-gold);">Seleziona un campionato</h3>
@@ -108,7 +105,20 @@
 
     <script>
         let globalData = {};
-        let currentLeague = '';
+
+        function getFlag(leagueName) {
+            if (leagueName.includes('Italy') || leagueName.includes('Italia')) return '🇮🇹';
+            if (leagueName.includes('England') || leagueName.includes('Inghilterra')) return '🏴󠁧󠁢󠁥󠁮󠁧󠁿';
+            if (leagueName.includes('Spain') || leagueName.includes('Spagna')) return '🇪🇸';
+            if (leagueName.includes('Germany') || leagueName.includes('Germania')) return '🇩🇪';
+            if (leagueName.includes('France') || leagueName.includes('Francia')) return '🇫🇷';
+            if (leagueName.includes('Champions') || leagueName.includes('UEFA')) return '⭐';
+            if (leagueName.includes('Brazil') || leagueName.includes('Brasile')) return '🇧🇷';
+            if (leagueName.includes('Argentina')) return '🇦🇷';
+            if (leagueName.includes('Portugal') || leagueName.includes('Portogallo')) return '🇵🇹';
+            if (leagueName.includes('Netherlands') || leagueName.includes('Olanda')) return '🇳🇱';
+            return '⚽';
+        }
 
         async function initDashboard() {
             const leagueContainer = document.getElementById('leagueListContainer');
@@ -121,27 +131,17 @@
 
                 if (leagues.length === 0) {
                     leagueContainer.innerHTML = '<div style="color: var(--text-muted); font-size: 0.8rem;">Nessuna competizione oggi.</div>';
-                    matchesContainer.innerHTML = '<div class="loading">Nessuna partita in programma oggi nel palinsesto globale.</div>';
+                    matchesContainer.innerHTML = '<div class="loading">Nessuna partita in programma oggi.</div>';
                     return;
                 }
 
                 let htmlList = '';
                 leagues.forEach((league, index) => {
                     const activeClass = index === 0 ? 'active' : '';
-                    if (index === 0) currentLeague = league;
+                    const icon = getFlag(league);
                     
-                    // Assegna un'icona/bandierina di default in base al nome o alla nazione
-                    let icon = '🏆';
-                    if (league.includes('Italy') || league.includes('Italia')) icon = '🇮🇹';
-                    else if (league.includes('England') || league.includes('Inghilterra')) icon = '🏴󠁧󠁢󠁥󠁮󠁧󠁿';
-                    else if (league.includes('Spain') || league.includes('Spagna')) icon = '🇪🇸';
-                    else if (league.includes('Germany') || league.includes('Germania')) icon = '🇩🇪';
-                    else if (league.includes('France') || league.includes('Francia')) icon = '🇫🇷';
-                    else if (league.includes('Champions')) icon = '⭐';
-                    else if (league.includes('World') || league.includes('International')) icon = '🌍';
-
                     htmlList += `
-                        <button class="league-btn ${activeClass}" onclick="selectLeague('${league}', this)">
+                        <button class="league-btn ${activeClass}" onclick="selectLeague('${league.replace(/'/g, "\\'")}', this)">
                             <span>${icon}</span>
                             <span style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">${league}</span>
                         </button>
@@ -149,11 +149,7 @@
                 });
 
                 leagueContainer.innerHTML = htmlList;
-
-                // Carica il primo campionato disponibile
-                if (leagues.length > 0) {
-                    selectLeague(leagues[0], null);
-                }
+                selectLeague(leagues[0], document.querySelector('.league-btn'));
 
             } catch (error) {
                 leagueContainer.innerHTML = '<div style="color: var(--text-muted);">Errore dati</div>';
@@ -162,21 +158,14 @@
         }
 
         function selectLeague(league, btnElement) {
+            document.querySelectorAll('.league-btn').forEach(b => b.classList.remove('active'));
             if (btnElement) {
-                document.querySelectorAll('.league-btn').forEach(b => b.classList.remove('active'));
                 btnElement.classList.add('active');
-            } else {
-                // Seleziona il primo pulsante corrispondente se avviato via codice
-                const buttons = document.querySelectorAll('.league-btn');
-                if (buttons.length > 0) buttons[0].classList.add('active');
             }
 
-            currentLeague = league;
+            document.getElementById('selectedLeagueTitleinnerText', league);
             document.getElementById('selectedLeagueTitle').innerText = league;
-            renderMatches(league);
-        }
-
-        function renderMatches(league) {
+            
             const container = document.getElementById('matchesContainer');
             const matches = globalData[league] || [];
             
@@ -210,7 +199,7 @@
                             <div class="odd-box"><span class="odd-label">X2</span><span class="odd-val">${m.odds['X2']}</span></div>
                             <div class="odd-box"><span class="odd-label">O 1.5</span><span class="odd-val">${m.odds['O1.5']}</span></div>
                             <div class="odd-box"><span class="odd-label">O 2.5</span><span class="odd-val">${m.odds['O2.5']}</span></div>
-                            <div class="odd-box"><span class="odd-label">O 3.5</span><span class="odd-val">${m.odds['3.5'] || m.odds['O3.5']}</span></div>
+                            <div class="odd-box"><span class="odd-label">O 3.5</span><span class="odd-val">${m.odds['O3.5']}</span></div>
                         </div>
 
                         <div class="prediction-box">
@@ -225,7 +214,6 @@
             container.innerHTML = html;
         }
 
-        // Avvio automatico all'apertura
         initDashboard();
     </script>
 </body>
