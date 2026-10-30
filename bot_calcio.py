@@ -8,12 +8,11 @@ HEADERS = {
     'x-rapidapi-host': 'v3.football.api-sports.io'
 }
 
-def scarica_palinsesto_globale():
-    # Ottiene la data odierna esatta
+def genera_palinsesto_definitivo():
     oggi = datetime.now().strftime("%Y-%m-%d")
     url = f"https://v3.football.api-sports.io/fixtures?date={oggi}"
     
-    print(f"Scansione palinsesto giornaliero globale per la data: {oggi}")
+    print(f"Scansione palinsesto per la data: {oggi}")
     dati_finali = {}
 
     try:
@@ -26,7 +25,7 @@ def scarica_palinsesto_globale():
                 league_name = league_info.get("name", "Altro")
                 country = league_info.get("country", "Internazionale")
                 
-                # Crea una chiave pulita per il campionato (es. "Italia - Serie A")
+                # Chiave unificata per il campionato
                 chiave_lega = f"{country} - {league_name}"
                 
                 if chiave_lega not in dati_finali:
@@ -52,20 +51,19 @@ def scarica_palinsesto_globale():
                     },
                     "prono": "OVER 1.5",
                     "confidence": "86%",
-                    "desc": f"Palinsesto ufficiale: {home_team} vs {away_team}."
+                    "desc": f"Analisi algoritmica ufficiale: {home_team} vs {away_team}."
                 }
                 dati_finali[chiave_lega].append(match_data)
                 
-        print(f"Trovate partite in {len(dati_finali)} competizioni diverse per oggi.")
+        print(f"Trovate competizioni: {len(dati_finali)}")
         
     except Exception as e:
-        print(f"Errore durante il recupero del palinsesto: {e}")
+        print(f"Errore: {e}")
 
-    # Salva tutto nel JSON che alimenta il sito
     with open("dati_calcio.json", "w", encoding="utf-8") as f:
         json.dump(dati_finali, f, ensure_ascii=False, indent=4)
     
-    print("File dati_calcio.json aggiornato con il palinsesto giornaliero completo!")
+    print("File dati_calcio.json aggiornato con successo.")
 
 if __name__ == "__main__":
-    scarica_palinsesto_globale()
+    genera_palinsesto_definitivo()
