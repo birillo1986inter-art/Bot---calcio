@@ -17,13 +17,15 @@ LEAGUES = {
     "FRA": 61   # Ligue 1
 }
 
-def scarica_palinsesto_reale():
+def scarica_palinsesto_odierno():
     dati_finali = {}
+    # Ottiene la data di oggi in formato YYYY-MM-DD
     oggi = datetime.now().strftime("%Y-%m-%d")
+    print(f"Scansione palinsesto per la data odierna: {oggi}")
 
     for codice, league_id in LEAGUES.items():
-        # Utilizziamo la stagione 2026 e cerchiamo le partite attuali/future
-        url = f"https://v3.football.api-sports.io/fixtures?league={league_id}&season=2026&next=15"
+        # Chiamata filtrata specificamente per la data di oggi
+        url = f"https://v3.football.api-sports.io/fixtures?league={league_id}&season=2026&date={oggi}"
         
         try:
             response = requests.get(url, headers=HEADERS, timeout=10)
@@ -35,7 +37,6 @@ def scarica_palinsesto_reale():
                 for item in res_json["response"]:
                     fixture = item.get("fixture", {})
                     teams = item.get("teams", {})
-                    goals = item.get("goals", {})
                     
                     # Orario della partita
                     date_str = fixture.get("date", "")
@@ -44,7 +45,6 @@ def scarica_palinsesto_reale():
                     home_team = teams.get("home", {}).get("name", "Casa")
                     away_team = teams.get("away", {}).get("name", "Ospite")
                     
-                    # Calcolo di un pronostico basato sui valori reali
                     match_data = {
                         "time": orario,
                         "home": home_team,
@@ -56,12 +56,12 @@ def scarica_palinsesto_reale():
                         },
                         "prono": "OVER 1.5",
                         "confidence": "86%",
-                        "desc": f"Palinsesto ufficiale API-Football: {home_team} vs {away_team}."
+                        "desc": f"Palinsesto ufficiale odierno: {home_team} vs {away_team}."
                     }
                     partite_formattate.append(match_data)
             
             dati_finali[codice] = partite_formattate
-            print(f"[{codice}] Scaricate {len(partite_formattate)} partite reali.")
+            print(f"[{codice}] Trovate {len(partite_formattate)} partite per oggi.")
             
         except Exception as e:
             print(f"Errore durante il recupero per {codice}: {e}")
@@ -71,7 +71,7 @@ def scarica_palinsesto_reale():
     with open("dati_calcio.json", "w", encoding="utf-8") as f:
         json.dump(dati_finali, f, ensure_ascii=False, indent=4)
     
-    print("Palinsesto aggiornato con successo!")
+    print("Palinsesto giornaliero aggiornato con successo!")
 
 if __name__ == "__main__":
-    scarica_palinsesto_reale()
+    scarica_palinsesto_odierno()
