@@ -139,11 +139,10 @@
                 leagues.forEach((league, index) => {
                     const activeClass = index === 0 ? 'active' : '';
                     const icon = getFlag(league);
-                    // Sostituisce i singoli apici per evitare problemi nel JavaScript inline
-                    const safeLeague = league.replace(/'/g, "\\'");
                     
+                    // Creazione del bottone con dataset per evitare problemi di apici nel click
                     htmlList += `
-                        <button class="league-btn ${activeClass}" onclick="selectLeague('${safeLeague}', this)">
+                        <button class="league-btn ${activeClass}" data-league="${league}">
                             <span>${icon}</span>
                             <span style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">${league}</span>
                         </button>
@@ -151,7 +150,18 @@
                 });
 
                 leagueContainer.innerHTML = htmlList;
-                selectLeague(leagues[0], document.querySelector('.league-btn'));
+
+                // Aggiunta degli Event Listener puliti a tutti i bottoni
+                document.querySelectorAll('.league-btn').forEach(btn => {
+                    btn.addEventListener('click', function() {
+                        document.querySelectorAll('.league-btn').forEach(b => b.classList.remove('active'));
+                        this.classList.add('active');
+                        selectLeague(this.getAttribute('data-league'));
+                    });
+                });
+
+                // Carica la prima lega di default
+                selectLeague(leagues[0]);
 
             } catch (error) {
                 leagueContainer.innerHTML = '<div style="color: var(--text-muted);">Errore dati</div>';
@@ -159,12 +169,7 @@
             }
         }
 
-        function selectLeague(league, btnElement) {
-            document.querySelectorAll('.league-btn').forEach(b => b.classList.remove('active'));
-            if (btnElement) {
-                btnElement.classList.add('active');
-            }
-
+        function selectLeague(league) {
             document.getElementById('selectedLeagueTitle').innerText = league;
             
             const container = document.getElementById('matchesContainer');
