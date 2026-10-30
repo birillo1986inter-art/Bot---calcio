@@ -1,0 +1,17 @@
+{
+    "ITA": [
+        {
+            "time": "20:45",
+            "home": "Inter",
+            "away": "Atalanta",
+            "odds": {
+                "1": "1.85", "X": "3.60", "2": "4.20",
+                "1X": "1.23", "12": "1.28", "X2": "1.95",
+                "O1.5": "1.20", "O2.5": "1.72", "O3.5": "2.80"
+            },
+            "prono": "OVER 2.5",
+            "confidence": "84%",
+            "desc": "Media gol H2H: 3.1 a partita. Inter vittoriosa nelle ultime 4 uscite casalinghe."
+        }
+    ]
+}
