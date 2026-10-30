@@ -1,131 +1,176 @@
-import os
-import json
-import requests
-
-# CHIAVI API (Puoi impostarle come secrets di GitHub o lasciarle per test)
-ODDS_API_KEY = os.getenv("ODDS_API_KEY", "TUA_CHIAVE_ODDS_API")
-API_FOOTBALL_KEY = os.getenv("API_FOOTBALL_KEY", "TUA_CHIAVE_API_FOOTBALL")
-
-# Mappatura leghe per The Odds API
-LEAGUES_ODDS = {
-    "ITA": "soccer_italy_serie_a",
-    "ENG": "soccer_epl",
-    "ESP": "soccer_spain_la_liga",
-    "GER": "soccer_germany_bundesliga",
-    "FRA": "soccer_france_ligue_one"
-}
-
-def calcola_pronostico_matematico(odd_1, odd_x, odd_2, odd_o25):
-    """
-    Algoritmo di calcolo probabilità basato sulle quote reali
-    e modelli di valore atteso (Value Bet / Expected Goals)
-    """
-    try:
-        p1 = (1 / float(odd_1)) * 100
-        px = (1 / float(odd_x)) * 100
-        p2 = (1 / float(odd_2)) * 100
-        po25 = (1 / float(odd_o25)) * 100
-
-        # Bilanciamento margine bookmaker
-        totale = p1 + px + p2
-        p1_reale = (p1 / totale) * 100
-        p2_reale = (p2 / totale) * 100
-
-        if po25 >= 58 and p1_reale > 45:
-            prono = "1 + OVER 1.5"
-            confidenza = f"{int(po25)}%"
-            desc = "Match ad alta propensione di gol e forte vantaggio della squadra di casa."
-        elif po25 >= 55:
-            prono = "OVER 2.5"
-            confidenza = f"{int(po25)}%"
-            desc = "Statistiche H2H e quota indicano un'alta probabilità di almeno 3 gol totali."
-        elif p1_reale >= 60:
-            prono = "1 (VITTORIA CASA)"
-            confidenza = f"{int(p1_reale)}%"
-            desc = "Squadra di casa favorita sia dalla forma recente che dal trend di mercato."
-        elif p2_reale >= 60:
-            prono = "2 (VITTORIA OSPITI)"
-            confidenza = f"{int(p2_reale)}%"
-            desc = "Squadra ospite con netto margine di superiorità tattica e di quota."
-        elif p1_reale >= 40:
-            prono = "1X + OVER 1.5"
-            confidenza = f"{int(p1_reale + 20)}%"
-            desc = "Gara equilibrata, doppia chance interna a protezione con margine gol."
-        else:
-            prono = "X2 + OVER 1.5"
-            confidenza = f"{int(p2_reale + 20)}%"
-            desc = "Tendenza favorevole agli ospiti, coperta da doppia chance."
-
-        return prono, confidenza, desc
-    except Exception:
-        return "OVER 1.5", "75%", "Analisi basata sullo storico medie gol."
-
-def genera_palinsesto():
-    database = {}
-
-    for league_code, league_key in LEAGUES_ODDS.items():
-        database[league_code] = []
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Cup Football - Dashboard</title>
+    <style>
+        :root {
+            --bg-main: #0b0f19;
+            --bg-card: #151d2a;
+            --bg-hover: #212d42;
+            --accent-blue: #2563eb;
+            --accent-green: #10b981;
+            --accent-gold: #f59e0b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --border: #1e293b;
+        }
         
-        # Chiamata a The Odds API per quote reali 1X2 e Under/Over
-        url = f"https://api.the-odds-api.com/v4/sports/{league_key}/odds/?apiKey={ODDS_API_KEY}&regions=eu&markets=h2h,totals"
-        
-        try:
-            res = requests.get(url, timeout=10)
-            if res.status_code == 200:
-                data = res.json()
-                for match in data[:5]:  # Prime 5 partite del giorno
-                    home = match.get("home_team", "Casa")
-                    away = match.get("away_team", "Fuori")
-                    time_str = match.get("commence_time", "")[11:16]
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, sans-serif; }
+        body { background-color: var(--bg-main); color: var(--text-main); padding: 12px; max-width: 1400px; margin: 0 auto; }
 
-                    # Estrazione quote
-                    bookmakers = match.get("bookmakers", [])
-                    odd_1, odd_x, odd_2 = "2.00", "3.30", "3.60"
-                    odd_o15, odd_o25, odd_o35 = "1.25", "1.80", "3.00"
+        header {
+            text-align: center; margin-bottom: 16px; padding: 16px;
+            background: var(--bg-card); border-radius: 12px; border: 1px solid var(--border);
+        }
+        h1 { font-size: 1.6rem; color: var(--accent-gold); }
+        .subtitle { color: var(--text-muted); font-size: 0.85rem; }
 
-                    if bookmakers:
-                        bm = bookmakers[0]
-                        for market in bm.get("markets", []):
-                            if market["key"] == "h2h":
-                                for outcome in market["outcomes"]:
-                                    if outcome["name"] == home: odd_1 = str(outcome["price"])
-                                    elif outcome["name"] == away: odd_2 = str(outcome["price"])
-                                    else: odd_x = str(outcome["price"])
-                            elif market["key"] == "totals":
-                                for outcome in market["outcomes"]:
-                                    if outcome.get("point") == 2.5 and outcome.get("name") == "Over":
-                                        odd_o25 = str(outcome["price"])
+        .dashboard-container { display: grid; grid-template-columns: 1fr; gap: 16px; }
+        @media (min-width: 850px) { .dashboard-container { grid-template-columns: 280px 1fr; } }
 
-                    # Calcolo calcolato
-                    prono, conf, desc = calcola_pronostico_matematico(odd_1, odd_x, odd_2, odd_o25)
+        .sidebar { background: var(--bg-card); border-radius: 12px; padding: 14px; border: 1px solid var(--border); }
+        .sidebar h2 { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 12px; text-transform: uppercase; }
+        .league-list { display: flex; flex-direction: column; gap: 8px; }
 
-                    # Calcolo doppie chance
-                    o1 = float(odd_1)
-                    ox = float(odd_x)
-                    o2 = float(odd_2)
-                    odd_1x = f"{1 / ((1/o1) + (1/ox)):.2f}"
-                    odd_x2 = f"{1 / ((1/ox) + (1/o2)):.2f}"
-                    odd_12 = f"{1 / ((1/o1) + (1/o2)):.2f}"
+        .league-btn {
+            display: flex; align-items: center; gap: 10px; background: var(--bg-main);
+            color: var(--text-main); padding: 10px 12px; border-radius: 8px;
+            border: 1px solid var(--border); cursor: pointer; font-weight: 500; width: 100%; text-align: left;
+        }
+        .league-btn:hover, .league-btn.active { background: var(--bg-hover); border-color: var(--accent-blue); }
 
-                    database[league_code].append({
-                        "time": time_str if time_str else "20:45",
-                        "home": home,
-                        "away": away,
-                        "odds": {
-                            "1": odd_1, "X": odd_x, "2": odd_2,
-                            "1X": odd_1x, "12": odd_12, "X2": odd_x2,
-                            "O1.5": "1.22", "O2.5": odd_o25, "O3.5": "2.90"
-                        },
-                        "prono": prono,
-                        "confidence": conf,
-                        "desc": desc
-                    })
-        except Exception as e:
-            print(f"Errore caricamento {league_code}: {e}")
+        .main-content { display: flex; flex-direction: column; gap: 16px; }
+        .content-header {
+            background: var(--bg-card); padding: 14px 18px; border-radius: 12px;
+            border: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center;
+        }
 
-    # Salva il file JSON letto dalla dashboard web
-    with open("dati_calcio.json", "w", encoding="utf-8") as f:
-        json.dump(database, f, ensure_ascii=False, indent=4)
+        .match-card {
+            background: var(--bg-card); border-radius: 12px; padding: 16px;
+            border: 1px solid var(--border); display: flex; flex-direction: column; gap: 12px;
+        }
+        .match-header { display: flex; justify-content: space-between; color: var(--text-muted); font-size: 0.8rem; font-weight: 600; }
+        .match-teams { display: flex; justify-content: space-between; align-items: center; font-size: 1.1rem; font-weight: bold; }
+        .vs { color: var(--accent-gold); font-size: 0.85rem; }
 
-if __name__ == "__main__":
-    genera_palinsesto()
+        .odds-grid {
+            display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px;
+            background: var(--bg-main); padding: 10px; border-radius: 8px;
+        }
+        .odd-box {
+            display: flex; flex-direction: column; align-items: center;
+            background: var(--bg-card); padding: 6px; border-radius: 6px; border: 1px solid var(--border); font-size: 0.8rem;
+        }
+        .odd-label { color: var(--text-muted); font-size: 0.7rem; }
+        .odd-val { color: var(--accent-blue); font-weight: bold; margin-top: 2px; }
+
+        .prediction-box {
+            background: rgba(37, 99, 235, 0.1); border: 1px solid var(--accent-blue);
+            border-radius: 8px; padding: 12px; display: flex; flex-direction: column; gap: 6px;
+        }
+        .prono-title { color: var(--accent-gold); font-size: 0.85rem; font-weight: bold; text-transform: uppercase; }
+        .prono-badge { background: var(--accent-green); color: black; font-weight: bold; padding: 4px 10px; border-radius: 4px; font-size: 0.85rem; width: fit-content; }
+        .prono-stats { color: var(--text-muted); font-size: 0.8rem; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Quantum Cup Football</h1>
+        <p class="subtitle">Analisi Live & Algoritmo Pronostici</p>
+    </header>
+
+    <div class="dashboard-container">
+        <div class="sidebar">
+            <h2>Campionati</h2>
+            <div class="league-list">
+                <button class="league-btn active" onclick="loadLeague('ITA', this)"><span>🇮🇹</span> Italia - Serie A</button>
+                <button class="league-btn" onclick="loadLeague('ENG', this)"><span>🏴󠁧󠁢󠁥󠁮󠁧󠁿</span> Inghilterra - Premier</button>
+                <button class="league-btn" onclick="loadLeague('ESP', this)"><span>🇪🇸</span> Spagna - LaLiga</button>
+                <button class="league-btn" onclick="loadLeague('GER', this)"><span>🇩🇪</span> Germania - Bundesliga</button>
+                <button class="league-btn" onclick="loadLeague('FRA', this)"><span>🇫🇷</span> Francia - Ligue 1</button>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="content-header">
+                <h3 id="selectedLeagueTitle">Campionato Selezionato</h3>
+                <span id="matchCount" style="color: var(--accent-green); font-weight: bold;">Caricamento...</span>
+            </div>
+
+            <div id="matchesContainer"></div>
+        </div>
+    </div>
+
+    <script>
+        let currentLeague = 'ITA';
+
+        async function loadLeague(code, btnElement) {
+            if (btnElement) {
+                document.querySelectorAll('.league-btn').forEach(b => b.classList.remove('active'));
+                btnElement.classList.add('active');
+            }
+
+            currentLeague = code;
+            const container = document.getElementById('matchesContainer');
+            
+            try {
+                const response = await fetch('./dati_calcio.json?v=' + new Date().getTime());
+                const database = await response.json();
+                const matches = database[code] || [];
+                
+                document.getElementById('matchCount').innerText = `${matches.length} Match Trovati`;
+
+                if (matches.length === 0) {
+                    container.innerHTML = '<p style="color: var(--text-muted); padding: 20px;">Nessuna partita in palinsesto per questo campionato oggi.</p>';
+                    return;
+                }
+
+                let html = '';
+                matches.forEach(m => {
+                    html += `
+                        <div class="match-card">
+                            <div class="match-header">
+                                <span>OGGI - ${m.time}</span>
+                                <span>ANALISI REAL-TIME</span>
+                            </div>
+                            <div class="match-teams">
+                                <span>${m.home}</span>
+                                <span class="vs">VS</span>
+                                <span>${m.away}</span>
+                            </div>
+
+                            <div class="odds-grid">
+                                <div class="odd-box"><span class="odd-label">1</span><span class="odd-val">${m.odds['1']}</span></div>
+                                <div class="odd-box"><span class="odd-label">X</span><span class="odd-val">${m.odds['X']}</span></div>
+                                <div class="odd-box"><span class="odd-label">2</span><span class="odd-val">${m.odds['2']}</span></div>
+                                <div class="odd-box"><span class="odd-label">1X</span><span class="odd-val">${m.odds['1X']}</span></div>
+                                <div class="odd-box"><span class="odd-label">12</span><span class="odd-val">${m.odds['12']}</span></div>
+                                <div class="odd-box"><span class="odd-label">X2</span><span class="odd-val">${m.odds['X2']}</span></div>
+                                <div class="odd-box"><span class="odd-label">O 1.5</span><span class="odd-val">${m.odds['O1.5']}</span></div>
+                                <div class="odd-box"><span class="odd-label">O 2.5</span><span class="odd-val">${m.odds['O2.5']}</span></div>
+                                <div class="odd-box"><span class="odd-label">O 3.5</span><span class="odd-val">${m.odds['O3.5']}</span></div>
+                            </div>
+
+                            <div class="prediction-box">
+                                <span class="prono-title">Pronostico Calcolato (Affidabilità ${m.confidence})</span>
+                                <span class="prono-badge">${m.prono}</span>
+                                <span class="prono-stats">${m.desc}</span>
+                            </div>
+                        </div>
+                    `;
+                });
+
+                container.innerHTML = html;
+            } catch (error) {
+                container.innerHTML = '<p style="color: var(--text-muted); padding: 20px;">Attendi il primo avvio del bot per la scansione del palinsesto...</p>';
+            }
+        }
+
+        // Caricamento automatico
+        loadLeague('ITA', null);
+    </script>
+</body>
+</html>
