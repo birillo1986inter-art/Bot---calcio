@@ -1,9 +1,9 @@
 {
-    "Brazil - Copa do Brasil U20": [
+    "Ecuador - Liga Pro": [
         {
-            "time": "00:30",
-            "home": "São Paulo U20",
-            "away": "Atlético Mineiro U20",
+            "time": "00:00",
+            "home": "Barcelona SC",
+            "away": "Independiente del Valle",
             "odds": {
                 "1": "1.90",
                 "X": "3.40",
@@ -17,14 +17,174 @@
             },
             "prono": "OVER 1.5",
             "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: São Paulo U20 vs Atlético Mineiro U20."
+            "desc": "Analisi algoritmica ufficiale: Barcelona SC vs Independiente del Valle."
+        }
+    ],
+    "Argentina - Liga Profesional Argentina": [
+        {
+            "time": "00:00",
+            "home": "Boca Juniors",
+            "away": "Independ. Rivadavia",
+            "odds": {
+                "1": "1.90",
+                "X": "3.40",
+                "2": "3.80",
+                "1X": "1.22",
+                "12": "1.30",
+                "X2": "1.80",
+                "O1.5": "1.30",
+                "O2.5": "1.95",
+                "O3.5": "3.40"
+            },
+            "prono": "OVER 1.5",
+            "confidence": "86%",
+            "desc": "Analisi algoritmica ufficiale: Boca Juniors vs Independ. Rivadavia."
+        }
+    ],
+    "El-Salvador - Primera Division": [
+        {
+            "time": "01:00",
+            "home": "Platense",
+            "away": "FAS",
+            "odds": {
+                "1": "1.90",
+                "X": "3.40",
+                "2": "3.80",
+                "1X": "1.22",
+                "12": "1.30",
+                "X2": "1.80",
+                "O1.5": "1.30",
+                "O2.5": "1.95",
+                "O3.5": "3.40"
+            },
+            "prono": "OVER 1.5",
+            "confidence": "86%",
+            "desc": "Analisi algoritmica ufficiale: Platense vs FAS."
+        },
+        {
+            "time": "02:00",
+            "home": "Inter",
+            "away": "Águila",
+            "odds": {
+                "1": "1.90",
+                "X": "3.40",
+                "2": "3.80",
+                "1X": "1.22",
+                "12": "1.30",
+                "X2": "1.80",
+                "O1.5": "1.30",
+                "O2.5": "1.95",
+                "O3.5": "3.40"
+            },
+            "prono": "OVER 1.5",
+            "confidence": "86%",
+            "desc": "Analisi algoritmica ufficiale: Inter vs Águila."
+        }
+    ],
+    "Mexico - Liga MX": [
+        {
+            "time": "01:00",
+            "home": "Toluca",
+            "away": "Atlas",
+            "odds": {
+                "1": "1.90",
+                "X": "3.40",
+                "2": "3.80",
+                "1X": "1.22",
+                "12": "1.30",
+                "X2": "1.80",
+                "O1.5": "1.30",
+                "O2.5": "1.95",
+                "O3.5": "3.40"
+            },
+            "prono": "OVER 1.5",
+            "confidence": "86%",
+            "desc": "Analisi algoritmica ufficiale: Toluca vs Atlas."
+        },
+        {
+            "time": "03:10",
+            "home": "Monterrey",
+            "away": "Club America",
+            "odds": {
+                "1": "1.90",
+                "X": "3.40",
+                "2": "3.80",
+                "1X": "1.22",
+                "12": "1.30",
+                "X2": "1.80",
+                "O1.5": "1.30",
+                "O2.5": "1.95",
+                "O3.5": "3.40"
+            },
+            "prono": "OVER 1.5",
+            "confidence": "86%",
+            "desc": "Analisi algoritmica ufficiale: Monterrey vs Club America."
+        }
+    ],
+    "Nicaragua - Primera Division": [
+        {
+            "time": "01:00",
+            "home": "Real Estelí",
+            "away": "Rancho Santana",
+            "odds": {
+                "1": "1.90",
+                "X": "3.40",
+                "2": "3.80",
+                "1X": "1.22",
+                "12": "1.30",
+                "X2": "1.80",
+                "O1.5": "1.30",
+                "O2.5": "1.95",
+                "O3.5": "3.40"
+            },
+            "prono": "OVER 1.5",
+            "confidence": "86%",
+            "desc": "Analisi algoritmica ufficiale: Real Estelí vs Rancho Santana."
+        },
+        {
+            "time": "01:00",
+            "home": "Managua",
+            "away": "Walter Ferretti",
+            "odds": {
+                "1": "1.90",
+                "X": "3.40",
+                "2": "3.80",
+                "1X": "1.22",
+                "12": "1.30",
+                "X2": "1.80",
+                "O1.5": "1.30",
+                "O2.5": "1.95",
+                "O3.5": "3.40"
+            },
+            "prono": "OVER 1.5",
+            "confidence": "86%",
+            "desc": "Analisi algoritmica ufficiale: Managua vs Walter Ferretti."
+        },
+        {
+            "time": "22:00",
+            "home": "Jalapa",
+            "away": "San Marcos",
+            "odds": {
+                "1": "1.90",
+                "X": "3.40",
+                "2": "3.80",
+                "1X": "1.22",
+                "12": "1.30",
+                "X2": "1.80",
+                "O1.5": "1.30",
+                "O2.5": "1.95",
+                "O3.5": "3.40"
+            },
+            "prono": "OVER 1.5",
+            "confidence": "86%",
+            "desc": "Analisi algoritmica ufficiale: Jalapa vs San Marcos."
         }
     ],
     "Colombia - Primera A": [
         {
             "time": "01:30",
-            "home": "America de Cali",
-            "away": "Deportivo Cali",
+            "home": "Atletico Nacional",
+            "away": "Independiente Medellin",
             "odds": {
                 "1": "1.90",
                 "X": "3.40",
@@ -38,33 +198,14 @@
             },
             "prono": "OVER 1.5",
             "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: America de Cali vs Deportivo Cali."
-        },
-        {
-            "time": "23:20",
-            "home": "Santa Fe",
-            "away": "Once Caldas",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Santa Fe vs Once Caldas."
+            "desc": "Analisi algoritmica ufficiale: Atletico Nacional vs Independiente Medellin."
         }
     ],
-    "Japan - J3 League": [
+    "Guatemala - Liga Nacional": [
         {
-            "time": "03:00",
-            "home": "FC Ryukyu",
-            "away": "Roasso Kumamoto",
+            "time": "02:00",
+            "home": "Municipal",
+            "away": "Aurora",
             "odds": {
                 "1": "1.90",
                 "X": "3.40",
@@ -78,185 +219,14 @@
             },
             "prono": "OVER 1.5",
             "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: FC Ryukyu vs Roasso Kumamoto."
-        },
-        {
-            "time": "05:00",
-            "home": "Kitakyushu",
-            "away": "Kanazawa",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Kitakyushu vs Kanazawa."
-        },
-        {
-            "time": "09:00",
-            "home": "Biwako Shiga",
-            "away": "Kochi United",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Biwako Shiga vs Kochi United."
-        },
-        {
-            "time": "09:30",
-            "home": "Sagamihara",
-            "away": "Ehime FC",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Sagamihara vs Ehime FC."
-        },
-        {
-            "time": "10:00",
-            "home": "FC Gifu",
-            "away": "Thespakusatsu Gunma",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: FC Gifu vs Thespakusatsu Gunma."
-        },
-        {
-            "time": "10:00",
-            "home": "Kamatamare Sanuki",
-            "away": "Gainare Tottori",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Kamatamare Sanuki vs Gainare Tottori."
-        },
-        {
-            "time": "10:00",
-            "home": "Parceiro Nagano",
-            "away": "Kagoshima United",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Parceiro Nagano vs Kagoshima United."
-        },
-        {
-            "time": "10:00",
-            "home": "Nara Club",
-            "away": "Matsumoto Yamaga",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Nara Club vs Matsumoto Yamaga."
-        },
-        {
-            "time": "10:00",
-            "home": "Osaka",
-            "away": "Tochigi SC",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Osaka vs Tochigi SC."
-        },
-        {
-            "time": "10:00",
-            "home": "Renofa Yamaguchi",
-            "away": "Fukushima United",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Renofa Yamaguchi vs Fukushima United."
+            "desc": "Analisi algoritmica ufficiale: Municipal vs Aurora."
         }
     ],
-    "USA - Major League Soccer": [
+    "Chinese-Taipei - Taiwan Football Premier League": [
         {
-            "time": "03:00",
-            "home": "San Jose Earthquakes",
-            "away": "Houston Dynamo",
+            "time": "07:00",
+            "home": "AC Taipei",
+            "away": "Hang Yuen",
             "odds": {
                 "1": "1.90",
                 "X": "3.40",
@@ -270,168 +240,14 @@
             },
             "prono": "OVER 1.5",
             "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: San Jose Earthquakes vs Houston Dynamo."
+            "desc": "Analisi algoritmica ufficiale: AC Taipei vs Hang Yuen."
         }
     ],
-    "World - AFC Champions League Two": [
-        {
-            "time": "07:45",
-            "home": "Melbourne Victory",
-            "away": "Viettel",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Melbourne Victory vs Viettel."
-        },
-        {
-            "time": "12:15",
-            "home": "Persib Bandung",
-            "away": "FC Seoul",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Persib Bandung vs FC Seoul."
-        },
-        {
-            "time": "13:45",
-            "home": "Nasaf",
-            "away": "Khalidiya",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Nasaf vs Khalidiya."
-        },
-        {
-            "time": "16:00",
-            "home": "Al Faisaly",
-            "away": "Al-Rayyan SC",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Al Faisaly vs Al-Rayyan SC."
-        },
-        {
-            "time": "16:00",
-            "home": "Al-Jazira",
-            "away": "Gol Gohar",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Al-Jazira vs Gol Gohar."
-        },
-        {
-            "time": "16:00",
-            "home": "Muharraq",
-            "away": "Arkadag",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Muharraq vs Arkadag."
-        },
-        {
-            "time": "16:00",
-            "home": "Al Kuwait",
-            "away": "Al Wahda FC",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Al Kuwait vs Al Wahda FC."
-        },
-        {
-            "time": "18:15",
-            "home": "Al Taawon",
-            "away": "Al-Nahda",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Al Taawon vs Al-Nahda."
-        }
-    ],
-    "Indonesia - League Cup Indonesia": [
+    "Indonesia - Liga 1": [
         {
             "time": "08:30",
-            "home": "Persiku Kudus",
-            "away": "PSIM Yogyakarta",
+            "home": "Pusamania Borneo",
+            "away": "Persita",
             "odds": {
                 "1": "1.90",
                 "X": "3.40",
@@ -445,109 +261,14 @@
             },
             "prono": "OVER 1.5",
             "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Persiku Kudus vs PSIM Yogyakarta."
-        },
-        {
-            "time": "12:00",
-            "home": "Bekasi City",
-            "away": "PSIS Semarang",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Bekasi City vs PSIS Semarang."
-        },
-        {
-            "time": "12:00",
-            "home": "Deltras",
-            "away": "Persik Kediri",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Deltras vs Persik Kediri."
-        },
-        {
-            "time": "12:00",
-            "home": "Bali United",
-            "away": "Barito Putera",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Bali United vs Barito Putera."
-        },
-        {
-            "time": "12:00",
-            "home": "PSM Makassar",
-            "away": "Persipura Jayapura",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: PSM Makassar vs Persipura Jayapura."
-        },
-        {
-            "time": "12:00",
-            "home": "Arema FC",
-            "away": "Isenmulang Kalteng",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Arema FC vs Isenmulang Kalteng."
+            "desc": "Analisi algoritmica ufficiale: Pusamania Borneo vs Persita."
         }
     ],
     "Indonesia - Liga Nusantara": [
         {
             "time": "08:30",
-            "home": "Batavia",
-            "away": "Pesik",
+            "home": "Donggala United",
+            "away": "Persikutim",
             "odds": {
                 "1": "1.90",
                 "X": "3.40",
@@ -561,12 +282,12 @@
             },
             "prono": "OVER 1.5",
             "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Batavia vs Pesik."
+            "desc": "Analisi algoritmica ufficiale: Donggala United vs Persikutim."
         },
         {
             "time": "08:30",
-            "home": "Persekat",
-            "away": "Nusantara United",
+            "home": "Persegres Gresik United",
+            "away": "Persibangga Purbalingga",
             "odds": {
                 "1": "1.90",
                 "X": "3.40",
@@ -580,12 +301,12 @@
             },
             "prono": "OVER 1.5",
             "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Persekat vs Nusantara United."
+            "desc": "Analisi algoritmica ufficiale: Persegres Gresik United vs Persibangga Purbalingga."
         },
         {
             "time": "08:30",
-            "home": "Persikota Tangerang",
-            "away": "Persitara",
+            "home": "Persiba Bantul",
+            "away": "Pesinga Ngawi",
             "odds": {
                 "1": "1.90",
                 "X": "3.40",
@@ -599,14 +320,130 @@
             },
             "prono": "OVER 1.5",
             "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Persikota Tangerang vs Persitara."
+            "desc": "Analisi algoritmica ufficiale: Persiba Bantul vs Pesinga Ngawi."
+        },
+        {
+            "time": "08:30",
+            "home": "Persipani Paniai",
+            "away": "Persinab Nabire",
+            "odds": {
+                "1": "1.90",
+                "X": "3.40",
+                "2": "3.80",
+                "1X": "1.22",
+                "12": "1.30",
+                "X2": "1.80",
+                "O1.5": "1.30",
+                "O2.5": "1.95",
+                "O3.5": "3.40"
+            },
+            "prono": "OVER 1.5",
+            "confidence": "86%",
+            "desc": "Analisi algoritmica ufficiale: Persipani Paniai vs Persinab Nabire."
+        },
+        {
+            "time": "08:30",
+            "home": "Putra Sang Fajar",
+            "away": "Persibo",
+            "odds": {
+                "1": "1.90",
+                "X": "3.40",
+                "2": "3.80",
+                "1X": "1.22",
+                "12": "1.30",
+                "X2": "1.80",
+                "O1.5": "1.30",
+                "O2.5": "1.95",
+                "O3.5": "3.40"
+            },
+            "prono": "OVER 1.5",
+            "confidence": "86%",
+            "desc": "Analisi algoritmica ufficiale: Putra Sang Fajar vs Persibo."
+        },
+        {
+            "time": "08:30",
+            "home": "Persekabpas Pasuruan",
+            "away": "Ngada",
+            "odds": {
+                "1": "1.90",
+                "X": "3.40",
+                "2": "3.80",
+                "1X": "1.22",
+                "12": "1.30",
+                "X2": "1.80",
+                "O1.5": "1.30",
+                "O2.5": "1.95",
+                "O3.5": "3.40"
+            },
+            "prono": "OVER 1.5",
+            "confidence": "86%",
+            "desc": "Analisi algoritmica ufficiale: Persekabpas Pasuruan vs Ngada."
+        },
+        {
+            "time": "12:00",
+            "home": "Persika Karanganyar",
+            "away": "Persipa Pati",
+            "odds": {
+                "1": "1.90",
+                "X": "3.40",
+                "2": "3.80",
+                "1X": "1.22",
+                "12": "1.30",
+                "X2": "1.80",
+                "O1.5": "1.30",
+                "O2.5": "1.95",
+                "O3.5": "3.40"
+            },
+            "prono": "OVER 1.5",
+            "confidence": "86%",
+            "desc": "Analisi algoritmica ufficiale: Persika Karanganyar vs Persipa Pati."
+        },
+        {
+            "time": "12:00",
+            "home": "Perseden Denpasar",
+            "away": "Pasuruan United",
+            "odds": {
+                "1": "1.90",
+                "X": "3.40",
+                "2": "3.80",
+                "1X": "1.22",
+                "12": "1.30",
+                "X2": "1.80",
+                "O1.5": "1.30",
+                "O2.5": "1.95",
+                "O3.5": "3.40"
+            },
+            "prono": "OVER 1.5",
+            "confidence": "86%",
+            "desc": "Analisi algoritmica ufficiale: Perseden Denpasar vs Pasuruan United."
         }
     ],
-    "Ukraine - U19 League": [
+    "Australia - Australian Championship": [
+        {
+            "time": "08:30",
+            "home": "South Melbourne",
+            "away": "Oakleigh Cannons",
+            "odds": {
+                "1": "1.90",
+                "X": "3.40",
+                "2": "3.80",
+                "1X": "1.22",
+                "12": "1.30",
+                "X2": "1.80",
+                "O1.5": "1.30",
+                "O2.5": "1.95",
+                "O3.5": "3.40"
+            },
+            "prono": "OVER 1.5",
+            "confidence": "86%",
+            "desc": "Analisi algoritmica ufficiale: South Melbourne vs Oakleigh Cannons."
+        }
+    ],
+    "Georgia - Liga 3": [
         {
             "time": "09:00",
-            "home": "Kolos Kovalivka U19",
-            "away": "Rukh Vynnyky U19",
+            "home": "Gardabani",
+            "away": "Dinamo Tbilisi II",
             "odds": {
                 "1": "1.90",
                 "X": "3.40",
@@ -620,400 +457,14 @@
             },
             "prono": "OVER 1.5",
             "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Kolos Kovalivka U19 vs Rukh Vynnyky U19."
-        },
-        {
-            "time": "10:00",
-            "home": "Metalist 1925 U19",
-            "away": "Oleksandria U19",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Metalist 1925 U19 vs Oleksandria U19."
-        },
-        {
-            "time": "10:00",
-            "home": "Karpaty Lviv U19",
-            "away": "Obolon' Kyiv U19",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Karpaty Lviv U19 vs Obolon' Kyiv U19."
-        },
-        {
-            "time": "10:00",
-            "home": "Zhytomyr U19",
-            "away": "SK Metalurh U19",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Zhytomyr U19 vs SK Metalurh U19."
-        },
-        {
-            "time": "11:00",
-            "home": "Dynamo Kyiv U19",
-            "away": "Livyi Bereh U19",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Dynamo Kyiv U19 vs Livyi Bereh U19."
-        },
-        {
-            "time": "11:00",
-            "home": "LNZ Cherkasy U19",
-            "away": "Shakhtar Donetsk U19",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: LNZ Cherkasy U19 vs Shakhtar Donetsk U19."
-        },
-        {
-            "time": "11:00",
-            "home": "Veres Rivne U19",
-            "away": "Lviv U19",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Veres Rivne U19 vs Lviv U19."
-        }
-    ],
-    "Myanmar - National League": [
-        {
-            "time": "09:00",
-            "home": "Yangon United",
-            "away": "Myawady",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Yangon United vs Myawady."
-        },
-        {
-            "time": "09:00",
-            "home": "Shan United",
-            "away": "Thitsar Arman",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Shan United vs Thitsar Arman."
-        }
-    ],
-    "Georgia - Erovnuli Liga": [
-        {
-            "time": "09:30",
-            "home": "Samgurali",
-            "away": "Torpedo Kutaisi",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Samgurali vs Torpedo Kutaisi."
-        },
-        {
-            "time": "15:00",
-            "home": "Rustavi",
-            "away": "Meshakhte",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Rustavi vs Meshakhte."
-        }
-    ],
-    "Japan - J2 League": [
-        {
-            "time": "09:30",
-            "home": "Vanraure Hachinohe",
-            "away": "Albirex Niigata",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Vanraure Hachinohe vs Albirex Niigata."
-        },
-        {
-            "time": "09:30",
-            "home": "Imabari",
-            "away": "Tegevajaro Miyazaki",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Imabari vs Tegevajaro Miyazaki."
-        },
-        {
-            "time": "10:00",
-            "home": "Montedio Yamagata",
-            "away": "Jubilo Iwata",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Montedio Yamagata vs Jubilo Iwata."
-        },
-        {
-            "time": "10:00",
-            "home": "Tochigi City",
-            "away": "Blaublitz Akita",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Tochigi City vs Blaublitz Akita."
-        },
-        {
-            "time": "10:00",
-            "home": "Yokohama FC",
-            "away": "Vegalta Sendai",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Yokohama FC vs Vegalta Sendai."
-        },
-        {
-            "time": "10:00",
-            "home": "Iwaki",
-            "away": "Kataller Toyama",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Iwaki vs Kataller Toyama."
-        },
-        {
-            "time": "10:00",
-            "home": "Omiya Ardija",
-            "away": "Tokushima Vortis",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Omiya Ardija vs Tokushima Vortis."
-        },
-        {
-            "time": "10:00",
-            "home": "Sagan Tosu",
-            "away": "Oita Trinita",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Sagan Tosu vs Oita Trinita."
-        },
-        {
-            "time": "10:00",
-            "home": "Shonan Bellmare",
-            "away": "Ventforet Kofu",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Shonan Bellmare vs Ventforet Kofu."
-        },
-        {
-            "time": "10:00",
-            "home": "Consadole Sapporo",
-            "away": "Fujieda MYFC",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Consadole Sapporo vs Fujieda MYFC."
+            "desc": "Analisi algoritmica ufficiale: Gardabani vs Dinamo Tbilisi II."
         }
     ],
     "Tajikistan - Vysshaya Liga": [
         {
-            "time": "10:00",
-            "home": "Istiqlol",
-            "away": "Istaravshan",
+            "time": "09:00",
+            "home": "Parvoz",
+            "away": "CSKA Pomir",
             "odds": {
                 "1": "1.90",
                 "X": "3.40",
@@ -1027,14 +478,33 @@
             },
             "prono": "OVER 1.5",
             "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Istiqlol vs Istaravshan."
+            "desc": "Analisi algoritmica ufficiale: Parvoz vs CSKA Pomir."
+        },
+        {
+            "time": "09:00",
+            "home": "Regar-TadAZ",
+            "away": "Sardor Tursunzoda",
+            "odds": {
+                "1": "1.90",
+                "X": "3.40",
+                "2": "3.80",
+                "1X": "1.22",
+                "12": "1.30",
+                "X2": "1.80",
+                "O1.5": "1.30",
+                "O2.5": "1.95",
+                "O3.5": "3.40"
+            },
+            "prono": "OVER 1.5",
+            "confidence": "86%",
+            "desc": "Analisi algoritmica ufficiale: Regar-TadAZ vs Sardor Tursunzoda."
         }
     ],
-    "Japan - J1 League": [
+    "Georgia - Erovnuli Liga 2": [
         {
-            "time": "10:00",
-            "home": "Avispa Fukuoka",
-            "away": "Yokohama F. Marinos",
+            "time": "09:30",
+            "home": "Aragvi Dusheti",
+            "away": "Merani Martvili",
             "odds": {
                 "1": "1.90",
                 "X": "3.40",
@@ -1048,12 +518,12 @@
             },
             "prono": "OVER 1.5",
             "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Avispa Fukuoka vs Yokohama F. Marinos."
+            "desc": "Analisi algoritmica ufficiale: Aragvi Dusheti vs Merani Martvili."
         },
         {
-            "time": "10:00",
-            "home": "JEF United Chiba",
-            "away": "Nagoya Grampus",
+            "time": "09:30",
+            "home": "Gareji",
+            "away": "Samtredia",
             "odds": {
                 "1": "1.90",
                 "X": "3.40",
@@ -1067,12 +537,12 @@
             },
             "prono": "OVER 1.5",
             "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: JEF United Chiba vs Nagoya Grampus."
+            "desc": "Analisi algoritmica ufficiale: Gareji vs Samtredia."
         },
         {
-            "time": "10:00",
-            "home": "FC Tokyo",
-            "away": "Sanfrecce Hiroshima",
+            "time": "09:30",
+            "home": "Odishi 1919",
+            "away": "Shturmi",
             "odds": {
                 "1": "1.90",
                 "X": "3.40",
@@ -1086,12 +556,12 @@
             },
             "prono": "OVER 1.5",
             "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: FC Tokyo vs Sanfrecce Hiroshima."
+            "desc": "Analisi algoritmica ufficiale: Odishi 1919 vs Shturmi."
         },
         {
-            "time": "10:00",
-            "home": "Mito Hollyhock",
-            "away": "Tokyo Verdy",
+            "time": "11:00",
+            "home": "Telavi",
+            "away": "Gori",
             "odds": {
                 "1": "1.90",
                 "X": "3.40",
@@ -1105,12 +575,12 @@
             },
             "prono": "OVER 1.5",
             "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Mito Hollyhock vs Tokyo Verdy."
+            "desc": "Analisi algoritmica ufficiale: Telavi vs Gori."
         },
         {
-            "time": "10:00",
-            "home": "Fagiano Okayama",
-            "away": "Shimizu S-pulse",
+            "time": "12:00",
+            "home": "Kolkheti Poti",
+            "away": "Sioni",
             "odds": {
                 "1": "1.90",
                 "X": "3.40",
@@ -1124,92 +594,14 @@
             },
             "prono": "OVER 1.5",
             "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Fagiano Okayama vs Shimizu S-pulse."
-        },
-        {
-            "time": "10:00",
-            "home": "V-varen Nagasaki",
-            "away": "Kawasaki Frontale",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: V-varen Nagasaki vs Kawasaki Frontale."
-        },
-        {
-            "time": "10:30",
-            "home": "Urawa",
-            "away": "Cerezo Osaka",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Urawa vs Cerezo Osaka."
-        }
-    ],
-    "Czech-Republic - 1. Liga U19": [
-        {
-            "time": "10:00",
-            "home": "Viktoria Plzeň U19",
-            "away": "Sparta Praha U19",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Viktoria Plzeň U19 vs Sparta Praha U19."
-        },
-        {
-            "time": "10:00",
-            "home": "Sigma Olomouc U19",
-            "away": "Baník Ostrava U19",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Sigma Olomouc U19 vs Baník Ostrava U19."
+            "desc": "Analisi algoritmica ufficiale: Kolkheti Poti vs Sioni."
         }
     ],
     "Armenia - First League": [
         {
             "time": "10:00",
-            "home": "Ararat-Armenia II",
-            "away": "Noah II",
+            "home": "Andranik",
+            "away": "Araks Ararat",
             "odds": {
                 "1": "1.90",
                 "X": "3.40",
@@ -1223,33 +615,12 @@
             },
             "prono": "OVER 1.5",
             "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Ararat-Armenia II vs Noah II."
-        }
-    ],
-    "World - AFC Champions League Elite": [
-        {
-            "time": "10:00",
-            "home": "Gamba Osaka",
-            "away": "Port FC",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Gamba Osaka vs Port FC."
+            "desc": "Analisi algoritmica ufficiale: Andranik vs Araks Ararat."
         },
         {
             "time": "10:00",
-            "home": "Kashima",
-            "away": "Jeonbuk Motors",
+            "home": "Bentonit Ijevan",
+            "away": "Shirak II",
             "odds": {
                 "1": "1.90",
                 "X": "3.40",
@@ -1263,14 +634,149 @@
             },
             "prono": "OVER 1.5",
             "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Kashima vs Jeonbuk Motors."
+            "desc": "Analisi algoritmica ufficiale: Bentonit Ijevan vs Shirak II."
+        },
+        {
+            "time": "11:00",
+            "home": "Olympia Yerevan",
+            "away": "Mika",
+            "odds": {
+                "1": "1.90",
+                "X": "3.40",
+                "2": "3.80",
+                "1X": "1.22",
+                "12": "1.30",
+                "X2": "1.80",
+                "O1.5": "1.30",
+                "O2.5": "1.95",
+                "O3.5": "3.40"
+            },
+            "prono": "OVER 1.5",
+            "confidence": "86%",
+            "desc": "Analisi algoritmica ufficiale: Olympia Yerevan vs Mika."
+        }
+    ],
+    "World - AFC Champions League Two": [
+        {
+            "time": "10:00",
+            "home": "Gangwon FC",
+            "away": "Kitchee",
+            "odds": {
+                "1": "1.90",
+                "X": "3.40",
+                "2": "3.80",
+                "1X": "1.22",
+                "12": "1.30",
+                "X2": "1.80",
+                "O1.5": "1.30",
+                "O2.5": "1.95",
+                "O3.5": "3.40"
+            },
+            "prono": "OVER 1.5",
+            "confidence": "86%",
+            "desc": "Analisi algoritmica ufficiale: Gangwon FC vs Kitchee."
+        },
+        {
+            "time": "10:00",
+            "home": "Kuching FA",
+            "away": "Phnom Penh Crown",
+            "odds": {
+                "1": "1.90",
+                "X": "3.40",
+                "2": "3.80",
+                "1X": "1.22",
+                "12": "1.30",
+                "X2": "1.80",
+                "O1.5": "1.30",
+                "O2.5": "1.95",
+                "O3.5": "3.40"
+            },
+            "prono": "OVER 1.5",
+            "confidence": "86%",
+            "desc": "Analisi algoritmica ufficiale: Kuching FA vs Phnom Penh Crown."
+        },
+        {
+            "time": "10:00",
+            "home": "Tampines Rovers",
+            "away": "Shanghai Shenhua",
+            "odds": {
+                "1": "1.90",
+                "X": "3.40",
+                "2": "3.80",
+                "1X": "1.22",
+                "12": "1.30",
+                "X2": "1.80",
+                "O1.5": "1.30",
+                "O2.5": "1.95",
+                "O3.5": "3.40"
+            },
+            "prono": "OVER 1.5",
+            "confidence": "86%",
+            "desc": "Analisi algoritmica ufficiale: Tampines Rovers vs Shanghai Shenhua."
+        },
+        {
+            "time": "12:15",
+            "home": "BG Pathum United",
+            "away": "Home United",
+            "odds": {
+                "1": "1.90",
+                "X": "3.40",
+                "2": "3.80",
+                "1X": "1.22",
+                "12": "1.30",
+                "X2": "1.80",
+                "O1.5": "1.30",
+                "O2.5": "1.95",
+                "O3.5": "3.40"
+            },
+            "prono": "OVER 1.5",
+            "confidence": "86%",
+            "desc": "Analisi algoritmica ufficiale: BG Pathum United vs Home United."
+        },
+        {
+            "time": "12:15",
+            "home": "Svay Rieng",
+            "away": "Machida Zelvia",
+            "odds": {
+                "1": "1.90",
+                "X": "3.40",
+                "2": "3.80",
+                "1X": "1.22",
+                "12": "1.30",
+                "X2": "1.80",
+                "O1.5": "1.30",
+                "O2.5": "1.95",
+                "O3.5": "3.40"
+            },
+            "prono": "OVER 1.5",
+            "confidence": "86%",
+            "desc": "Analisi algoritmica ufficiale: Svay Rieng vs Machida Zelvia."
+        },
+        {
+            "time": "12:15",
+            "home": "Wofoo Tai Po",
+            "away": "Adelaide United",
+            "odds": {
+                "1": "1.90",
+                "X": "3.40",
+                "2": "3.80",
+                "1X": "1.22",
+                "12": "1.30",
+                "X2": "1.80",
+                "O1.5": "1.30",
+                "O2.5": "1.95",
+                "O3.5": "3.40"
+            },
+            "prono": "OVER 1.5",
+            "confidence": "86%",
+            "desc": "Analisi algoritmica ufficiale: Wofoo Tai Po vs Adelaide United."
         }
     ],
     "Uzbekistan - Pro League A": [
         {
             "time": "10:00",
-            "home": "Metalourg",
-            "away": "FarDu",
+            "home": "Shortan",
+            "away": "Olimpik-Mobiuz",
             "odds": {
                 "1": "1.90",
                 "X": "3.40",
@@ -1284,54 +790,14 @@
             },
             "prono": "OVER 1.5",
             "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Metalourg vs FarDu."
+            "desc": "Analisi algoritmica ufficiale: Shortan vs Olimpik-Mobiuz."
         }
     ],
-    "Russia - Youth Championship": [
-        {
-            "time": "10:00",
-            "home": "Kirovets-Voskhozhdenie U19",
-            "away": "Nizhny Novgorod U19",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Kirovets-Voskhozhdenie U19 vs Nizhny Novgorod U19."
-        },
-        {
-            "time": "14:00",
-            "home": "Krylya Sovetov U19",
-            "away": "Dynamo Makhachkala U19",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Krylya Sovetov U19 vs Dynamo Makhachkala U19."
-        }
-    ],
-    "Kenya - FKF Premier League": [
+    "Azerbaijan - Birinci Dasta": [
         {
             "time": "10:30",
-            "home": "Homeboyz",
-            "away": "Shabana",
+            "home": "Baku Sportinq",
+            "away": "Şahdağ",
             "odds": {
                 "1": "1.90",
                 "X": "3.40",
@@ -1345,90 +811,12 @@
             },
             "prono": "OVER 1.5",
             "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Homeboyz vs Shabana."
+            "desc": "Analisi algoritmica ufficiale: Baku Sportinq vs Şahdağ."
         },
-        {
-            "time": "12:00",
-            "home": "3K",
-            "away": "Nairobi United",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: 3K vs Nairobi United."
-        },
-        {
-            "time": "12:00",
-            "home": "APS Bomet",
-            "away": "Migori Youth",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: APS Bomet vs Migori Youth."
-        },
-        {
-            "time": "12:00",
-            "home": "Tusker",
-            "away": "Posta Rangers FC",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Tusker vs Posta Rangers FC."
-        },
-        {
-            "time": "12:30",
-            "home": "Ulinzi Stars",
-            "away": "AFC Leopards",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Ulinzi Stars vs AFC Leopards."
-        }
-    ],
-    "Chinese-Taipei - Taiwan Football Premier League": [
         {
             "time": "10:30",
-            "home": "Tainan City",
-            "away": "Taichung Rock FC",
+            "home": "Karvan",
+            "away": "Mingəçevir",
             "odds": {
                 "1": "1.90",
                 "X": "3.40",
@@ -1442,33 +830,12 @@
             },
             "prono": "OVER 1.5",
             "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Tainan City vs Taichung Rock FC."
-        }
-    ],
-    "India - I-League": [
-        {
-            "time": "10:30",
-            "home": "Mohammedan",
-            "away": "Rajasthan United",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Mohammedan vs Rajasthan United."
+            "desc": "Analisi algoritmica ufficiale: Karvan vs Mingəçevir."
         },
         {
-            "time": "13:00",
-            "home": "Shillong Lajong",
-            "away": "Nagaland United",
+            "time": "15:00",
+            "home": "Cəbrayıl",
+            "away": "MOIK",
             "odds": {
                 "1": "1.90",
                 "X": "3.40",
@@ -1482,75 +849,14 @@
             },
             "prono": "OVER 1.5",
             "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Shillong Lajong vs Nagaland United."
-        }
-    ],
-    "Hong-Kong - Premier League U22": [
-        {
-            "time": "10:30",
-            "home": "Kowloon City U22",
-            "away": "Shatin U22",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Kowloon City U22 vs Shatin U22."
-        },
-        {
-            "time": "12:30",
-            "home": "Lee Man Warriors U22",
-            "away": "Eastern District U22",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Lee Man Warriors U22 vs Eastern District U22."
-        }
-    ],
-    "Ukraine - Premier League": [
-        {
-            "time": "11:00",
-            "home": "Kryvbas KR",
-            "away": "FC Kharkiv",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Kryvbas KR vs FC Kharkiv."
+            "desc": "Analisi algoritmica ufficiale: Cəbrayıl vs MOIK."
         }
     ],
     "Thailand - Thai League 2": [
         {
             "time": "11:00",
-            "home": "Chiangmai United",
-            "away": "Mahasarakham United",
+            "home": "Uttaradit",
+            "away": "Songkhla",
             "odds": {
                 "1": "1.90",
                 "X": "3.40",
@@ -1564,69 +870,12 @@
             },
             "prono": "OVER 1.5",
             "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Chiangmai United vs Mahasarakham United."
-        },
-        {
-            "time": "11:00",
-            "home": "Kasetsart FC",
-            "away": "Phrae United",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Kasetsart FC vs Phrae United."
-        },
-        {
-            "time": "11:30",
-            "home": "Muangthong United",
-            "away": "Nakhon Ratchasima FC",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Muangthong United vs Nakhon Ratchasima FC."
-        },
-        {
-            "time": "11:30",
-            "home": "Satun",
-            "away": "Police Tero",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Satun vs Police Tero."
+            "desc": "Analisi algoritmica ufficiale: Uttaradit vs Songkhla."
         },
         {
             "time": "12:00",
-            "home": "Khon Kaen United",
-            "away": "Kanchanaburi",
+            "home": "Nong Bua Pitchaya",
+            "away": "Muang Loei United",
             "odds": {
                 "1": "1.90",
                 "X": "3.40",
@@ -1640,14 +889,14 @@
             },
             "prono": "OVER 1.5",
             "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Khon Kaen United vs Kanchanaburi."
+            "desc": "Analisi algoritmica ufficiale: Nong Bua Pitchaya vs Muang Loei United."
         }
     ],
-    "Bulgaria - Third League - Southwest": [
+    "Kenya - FKF Premier League": [
         {
-            "time": "11:00",
-            "home": "CSKA Sofia III",
-            "away": "Septemvri Sofia II",
+            "time": "12:00",
+            "home": "Mara Sugar",
+            "away": "Kenya Police",
             "odds": {
                 "1": "1.90",
                 "X": "3.40",
@@ -1661,52 +910,12 @@
             },
             "prono": "OVER 1.5",
             "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: CSKA Sofia III vs Septemvri Sofia II."
-        }
-    ],
-    "World - UEFA Youth League": [
-        {
-            "time": "11:00",
-            "home": "Sabah U19",
-            "away": "Barcelona U19",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Sabah U19 vs Barcelona U19."
-        },
-        {
-            "time": "11:00",
-            "home": "Legia Warszawa U19",
-            "away": "Super Nova U19",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Legia Warszawa U19 vs Super Nova U19."
+            "desc": "Analisi algoritmica ufficiale: Mara Sugar vs Kenya Police."
         },
         {
             "time": "12:00",
-            "home": "Shakhtar Donetsk U19",
-            "away": "Fenerbahce U19",
+            "home": "Murang'a SEAL",
+            "away": "KCB",
             "odds": {
                 "1": "1.90",
                 "X": "3.40",
@@ -1720,202 +929,12 @@
             },
             "prono": "OVER 1.5",
             "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Shakhtar Donetsk U19 vs Fenerbahce U19."
-        },
-        {
-            "time": "12:00",
-            "home": "Slavia Praha U19",
-            "away": "Villarreal U19",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Slavia Praha U19 vs Villarreal U19."
-        },
-        {
-            "time": "12:00",
-            "home": "Dinamo Zagreb U19",
-            "away": "Benfica U19",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Dinamo Zagreb U19 vs Benfica U19."
-        },
-        {
-            "time": "13:00",
-            "home": "Sporting CP U19",
-            "away": "Manchester United U19",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Sporting CP U19 vs Manchester United U19."
-        },
-        {
-            "time": "13:00",
-            "home": "Salzburg U19",
-            "away": "Crvena Zvezda U18",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Salzburg U19 vs Crvena Zvezda U18."
-        },
-        {
-            "time": "14:00",
-            "home": "Club Brugge U19",
-            "away": "Liverpool U19",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Club Brugge U19 vs Liverpool U19."
-        },
-        {
-            "time": "14:00",
-            "home": "Internazionale U19",
-            "away": "Stuttgart U19",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Internazionale U19 vs Stuttgart U19."
-        },
-        {
-            "time": "14:00",
-            "home": "Lille U19",
-            "away": "Bayern München U19",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Lille U19 vs Bayern München U19."
-        },
-        {
-            "time": "15:00",
-            "home": "Atlético Madrid U19",
-            "away": "Viking U19",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Atlético Madrid U19 vs Viking U19."
-        },
-        {
-            "time": "15:00",
-            "home": "PSG U19",
-            "away": "Roma U19",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: PSG U19 vs Roma U19."
-        },
-        {
-            "time": "15:00",
-            "home": "Dinamo Tbilisi U19",
-            "away": "Fiorentina U19",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Dinamo Tbilisi U19 vs Fiorentina U19."
+            "desc": "Analisi algoritmica ufficiale: Murang'a SEAL vs KCB."
         },
         {
             "time": "16:00",
-            "home": "HJK U19",
-            "away": "Stabæk U19",
+            "home": "GOR Mahia",
+            "away": "Mombasa Elite",
             "odds": {
                 "1": "1.90",
                 "X": "3.40",
@@ -1929,275 +948,14 @@
             },
             "prono": "OVER 1.5",
             "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: HJK U19 vs Stabæk U19."
-        },
-        {
-            "time": "16:00",
-            "home": "Hradec Králové U19",
-            "away": "Kairat U19",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Hradec Králové U19 vs Kairat U19."
-        },
-        {
-            "time": "16:00",
-            "home": "Sheriff U19",
-            "away": "Maccabi Tel Aviv U19",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Sheriff U19 vs Maccabi Tel Aviv U19."
-        },
-        {
-            "time": "16:30",
-            "home": "Flora III",
-            "away": "St Patrick's U19",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Flora III vs St Patrick's U19."
-        },
-        {
-            "time": "17:00",
-            "home": "Hoffenheim U19",
-            "away": "PAOK U19",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Hoffenheim U19 vs PAOK U19."
-        },
-        {
-            "time": "19:00",
-            "home": "Rangers U19",
-            "away": "AZ U19",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Rangers U19 vs AZ U19."
-        }
-    ],
-    "Turkmenistan - Ýokary Liga": [
-        {
-            "time": "11:00",
-            "home": "Köpetdag Aşgabat",
-            "away": "Ahal",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Köpetdag Aşgabat vs Ahal."
-        }
-    ],
-    "Poland - Cup": [
-        {
-            "time": "11:00",
-            "home": "Polonia Środa",
-            "away": "Sokół Kleczew",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Polonia Środa vs Sokół Kleczew."
-        }
-    ],
-    "Serbia - Super Liga": [
-        {
-            "time": "12:00",
-            "home": "Radnicki NIS",
-            "away": "Železničar Pančevo",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Radnicki NIS vs Železničar Pančevo."
-        }
-    ],
-    "Montenegro - Second League": [
-        {
-            "time": "12:00",
-            "home": "Iskra",
-            "away": "Kom",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Iskra vs Kom."
-        }
-    ],
-    "Poland - III Liga - Group 2": [
-        {
-            "time": "12:00",
-            "home": "Lech Poznań II",
-            "away": "Bałtyk Koszalin",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Lech Poznań II vs Bałtyk Koszalin."
-        }
-    ],
-    "Poland - III Liga - Group 1": [
-        {
-            "time": "12:00",
-            "home": "Jagiellonia II",
-            "away": "Widzew II",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Jagiellonia II vs Widzew II."
-        }
-    ],
-    "Russia - First League": [
-        {
-            "time": "12:00",
-            "home": "FK Neftekhimik",
-            "away": "Rotor Volgograd",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: FK Neftekhimik vs Rotor Volgograd."
-        },
-        {
-            "time": "15:00",
-            "home": "KAMAZ",
-            "away": "Enisey",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: KAMAZ vs Enisey."
+            "desc": "Analisi algoritmica ufficiale: GOR Mahia vs Mombasa Elite."
         }
     ],
     "Congo-DR - Ligue 1": [
         {
             "time": "12:00",
-            "home": "New Jack",
-            "away": "Étoile du Congo",
+            "home": "JSK",
+            "away": "Anges Verts",
             "odds": {
                 "1": "1.90",
                 "X": "3.40",
@@ -2211,12 +969,31 @@
             },
             "prono": "OVER 1.5",
             "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: New Jack vs Étoile du Congo."
+            "desc": "Analisi algoritmica ufficiale: JSK vs Anges Verts."
+        },
+        {
+            "time": "13:00",
+            "home": "Malole",
+            "away": "Saint-Luc",
+            "odds": {
+                "1": "1.90",
+                "X": "3.40",
+                "2": "3.80",
+                "1X": "1.22",
+                "12": "1.30",
+                "X2": "1.80",
+                "O1.5": "1.30",
+                "O2.5": "1.95",
+                "O3.5": "3.40"
+            },
+            "prono": "OVER 1.5",
+            "confidence": "86%",
+            "desc": "Analisi algoritmica ufficiale: Malole vs Saint-Luc."
         },
         {
             "time": "14:00",
-            "home": "Vita Club",
-            "away": "Dauphins Noirs",
+            "home": "Rangers",
+            "away": "FC Renaissance",
             "odds": {
                 "1": "1.90",
                 "X": "3.40",
@@ -2230,75 +1007,14 @@
             },
             "prono": "OVER 1.5",
             "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Vita Club vs Dauphins Noirs."
-        }
-    ],
-    "Macedonia - Cup": [
-        {
-            "time": "12:00",
-            "home": "Akademija Pandev",
-            "away": "Aresimi",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Akademija Pandev vs Aresimi."
-        }
-    ],
-    "Zimbabwe - Premier Soccer League": [
-        {
-            "time": "12:00",
-            "home": "Herentals",
-            "away": "Kariba",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Herentals vs Kariba."
-        },
-        {
-            "time": "12:00",
-            "home": "Agama",
-            "away": "Highlanders",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Agama vs Highlanders."
+            "desc": "Analisi algoritmica ufficiale: Rangers vs FC Renaissance."
         }
     ],
     "Kosovo - Liga E Pare": [
         {
             "time": "12:00",
-            "home": "2 Korriku",
-            "away": "KF Lepenci",
+            "home": "Ferizaj",
+            "away": "Liria Prizren",
             "odds": {
                 "1": "1.90",
                 "X": "3.40",
@@ -2312,12 +1028,12 @@
             },
             "prono": "OVER 1.5",
             "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: 2 Korriku vs KF Lepenci."
+            "desc": "Analisi algoritmica ufficiale: Ferizaj vs Liria Prizren."
         },
         {
             "time": "12:00",
-            "home": "Istogu",
-            "away": "Suhareka",
+            "home": "Mitrovica",
+            "away": "Trepça Mitrovicë",
             "odds": {
                 "1": "1.90",
                 "X": "3.40",
@@ -2331,33 +1047,12 @@
             },
             "prono": "OVER 1.5",
             "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Istogu vs Suhareka."
-        }
-    ],
-    "Saudi-Arabia - Division 1": [
-        {
-            "time": "12:10",
-            "home": "Al Anwar",
-            "away": "Al Jandal",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Al Anwar vs Al Jandal."
+            "desc": "Analisi algoritmica ufficiale: Mitrovica vs Trepça Mitrovicë."
         },
         {
-            "time": "12:10",
-            "home": "Al Bukayriyah",
-            "away": "Al Wehda Club",
+            "time": "12:00",
+            "home": "Ramiz Sadiku",
+            "away": "Kika",
             "odds": {
                 "1": "1.90",
                 "X": "3.40",
@@ -2371,12 +1066,12 @@
             },
             "prono": "OVER 1.5",
             "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Al Bukayriyah vs Al Wehda Club."
+            "desc": "Analisi algoritmica ufficiale: Ramiz Sadiku vs Kika."
         },
         {
-            "time": "15:10",
-            "home": "Al Ula",
-            "away": "Al-Adalah",
+            "time": "12:00",
+            "home": "Rilindja 1974",
+            "away": "Dinamo Ferizaj",
             "odds": {
                 "1": "1.90",
                 "X": "3.40",
@@ -2390,33 +1085,12 @@
             },
             "prono": "OVER 1.5",
             "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Al Ula vs Al-Adalah."
-        }
-    ],
-    "Lebanon - Premier League": [
-        {
-            "time": "12:15",
-            "home": "Shabab Al Sahel",
-            "away": "Al Ansar",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Shabab Al Sahel vs Al Ansar."
+            "desc": "Analisi algoritmica ufficiale: Rilindja 1974 vs Dinamo Ferizaj."
         },
         {
-            "time": "19:30",
-            "home": "Safa",
-            "away": "Al Nejmeh",
+            "time": "12:00",
+            "home": "Trepça'89",
+            "away": "Prishtina e Re",
             "odds": {
                 "1": "1.90",
                 "X": "3.40",
@@ -2430,14 +1104,52 @@
             },
             "prono": "OVER 1.5",
             "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Safa vs Al Nejmeh."
+            "desc": "Analisi algoritmica ufficiale: Trepça'89 vs Prishtina e Re."
+        },
+        {
+            "time": "12:00",
+            "home": "Vëllaznimi",
+            "away": "Tefik Canga",
+            "odds": {
+                "1": "1.90",
+                "X": "3.40",
+                "2": "3.80",
+                "1X": "1.22",
+                "12": "1.30",
+                "X2": "1.80",
+                "O1.5": "1.30",
+                "O2.5": "1.95",
+                "O3.5": "3.40"
+            },
+            "prono": "OVER 1.5",
+            "confidence": "86%",
+            "desc": "Analisi algoritmica ufficiale: Vëllaznimi vs Tefik Canga."
+        },
+        {
+            "time": "12:00",
+            "home": "Vjosa",
+            "away": "FC Besa Peja",
+            "odds": {
+                "1": "1.90",
+                "X": "3.40",
+                "2": "3.80",
+                "1X": "1.22",
+                "12": "1.30",
+                "X2": "1.80",
+                "O1.5": "1.30",
+                "O2.5": "1.95",
+                "O3.5": "3.40"
+            },
+            "prono": "OVER 1.5",
+            "confidence": "86%",
+            "desc": "Analisi algoritmica ufficiale: Vjosa vs FC Besa Peja."
         }
     ],
-    "World - World Cup - U17": [
+    "Egypt - Second League": [
         {
             "time": "12:30",
-            "home": "Ecuador U17",
-            "away": "Korea Republic U17",
+            "home": "AL Nasr SC",
+            "away": "Tersana",
             "odds": {
                 "1": "1.90",
                 "X": "3.40",
@@ -2451,12 +1163,12 @@
             },
             "prono": "OVER 1.5",
             "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Ecuador U17 vs Korea Republic U17."
+            "desc": "Analisi algoritmica ufficiale: AL Nasr SC vs Tersana."
         },
         {
             "time": "12:30",
-            "home": "Uganda U17",
-            "away": "New Caledonia U17",
+            "home": "El Seka El Hadid",
+            "away": "Proxy",
             "odds": {
                 "1": "1.90",
                 "X": "3.40",
@@ -2470,12 +1182,12 @@
             },
             "prono": "OVER 1.5",
             "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Uganda U17 vs New Caledonia U17."
+            "desc": "Analisi algoritmica ufficiale: El Seka El Hadid vs Proxy."
         },
         {
-            "time": "13:30",
-            "home": "Haiti U17",
-            "away": "Saudi Arabia U17",
+            "time": "12:30",
+            "home": "Dayrout",
+            "away": "El Dakhleya",
             "odds": {
                 "1": "1.90",
                 "X": "3.40",
@@ -2489,12 +1201,12 @@
             },
             "prono": "OVER 1.5",
             "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Haiti U17 vs Saudi Arabia U17."
+            "desc": "Analisi algoritmica ufficiale: Dayrout vs El Dakhleya."
         },
         {
-            "time": "13:30",
-            "home": "Uruguay U17",
-            "away": "France U17",
+            "time": "12:30",
+            "home": "El Entag EL Harby",
+            "away": "Kahraba Ismailia",
             "odds": {
                 "1": "1.90",
                 "X": "3.40",
@@ -2508,12 +1220,12 @@
             },
             "prono": "OVER 1.5",
             "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Uruguay U17 vs France U17."
+            "desc": "Analisi algoritmica ufficiale: El Entag EL Harby vs Kahraba Ismailia."
         },
         {
-            "time": "14:30",
-            "home": "Greece U17",
-            "away": "Qatar U17",
+            "time": "12:30",
+            "home": "Mega Sport",
+            "away": "La Viena FC",
             "odds": {
                 "1": "1.90",
                 "X": "3.40",
@@ -2527,71 +1239,14 @@
             },
             "prono": "OVER 1.5",
             "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Greece U17 vs Qatar U17."
-        },
-        {
-            "time": "14:30",
-            "home": "Panama U17",
-            "away": "Egypt U17",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Panama U17 vs Egypt U17."
-        },
-        {
-            "time": "15:30",
-            "home": "Denmark U17",
-            "away": "Argentina U17",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Denmark U17 vs Argentina U17."
-        },
-        {
-            "time": "15:30",
-            "home": "Australia U17",
-            "away": "Mozambique U17",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Australia U17 vs Mozambique U17."
+            "desc": "Analisi algoritmica ufficiale: Mega Sport vs La Viena FC."
         }
     ],
     "Brazil - Paraense U20": [
         {
             "time": "12:30",
-            "home": "Comercial PA U20",
-            "away": "Remo U20",
+            "home": "Tesla U20",
+            "away": "Venus U20",
             "odds": {
                 "1": "1.90",
                 "X": "3.40",
@@ -2605,52 +1260,14 @@
             },
             "prono": "OVER 1.5",
             "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Comercial PA U20 vs Remo U20."
-        },
-        {
-            "time": "12:30",
-            "home": "Tapajos U20",
-            "away": "ESMAC U20",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Tapajos U20 vs ESMAC U20."
-        },
-        {
-            "time": "18:30",
-            "home": "Pedreira U20",
-            "away": "Paysandu PA U20",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Pedreira U20 vs Paysandu PA U20."
+            "desc": "Analisi algoritmica ufficiale: Tesla U20 vs Venus U20."
         }
     ],
-    "Liberia - LFA First Division": [
+    "Iran - Persian Gulf Pro League": [
         {
-            "time": "12:30",
-            "home": "Shaita",
-            "away": "Freeport",
+            "time": "12:45",
+            "home": "Chadormalu SC",
+            "away": "Mes Shahr-e Babak",
             "odds": {
                 "1": "1.90",
                 "X": "3.40",
@@ -2664,128 +1281,14 @@
             },
             "prono": "OVER 1.5",
             "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Shaita vs Freeport."
-        },
-        {
-            "time": "16:00",
-            "home": "Borough",
-            "away": "BEA Mountain",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Borough vs BEA Mountain."
-        },
-        {
-            "time": "16:00",
-            "home": "Downtown",
-            "away": "District 17",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Downtown vs District 17."
-        },
-        {
-            "time": "16:00",
-            "home": "Heaven Eleven",
-            "away": "Fassell",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Heaven Eleven vs Fassell."
-        },
-        {
-            "time": "16:00",
-            "home": "NPA Anchors",
-            "away": "Black Man Warrior",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: NPA Anchors vs Black Man Warrior."
-        },
-        {
-            "time": "16:00",
-            "home": "Paynesville",
-            "away": "LISCR",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Paynesville vs LISCR."
-        },
-        {
-            "time": "16:00",
-            "home": "Wologizi",
-            "away": "Watanga",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Wologizi vs Watanga."
+            "desc": "Analisi algoritmica ufficiale: Chadormalu SC vs Mes Shahr-e Babak."
         }
     ],
-    "Montenegro - First League": [
+    "World - World Cup - U17": [
         {
             "time": "13:00",
-            "home": "Bokelj",
-            "away": "Petrovac",
+            "home": "New Zealand U17",
+            "away": "Belgium U17",
             "odds": {
                 "1": "1.90",
                 "X": "3.40",
@@ -2799,14 +1302,12 @@
             },
             "prono": "OVER 1.5",
             "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Bokelj vs Petrovac."
-        }
-    ],
-    "England - Professional Development League": [
+            "desc": "Analisi algoritmica ufficiale: New Zealand U17 vs Belgium U17."
+        },
         {
             "time": "13:00",
-            "home": "Peterborough United U21",
-            "away": "Hull City U21",
+            "home": "Vietnam U17",
+            "away": "Mali U17",
             "odds": {
                 "1": "1.90",
                 "X": "3.40",
@@ -2820,14 +1321,128 @@
             },
             "prono": "OVER 1.5",
             "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Peterborough United U21 vs Hull City U21."
+            "desc": "Analisi algoritmica ufficiale: Vietnam U17 vs Mali U17."
+        },
+        {
+            "time": "14:00",
+            "home": "Jamaica U17",
+            "away": "Côte d'Ivoire U17",
+            "odds": {
+                "1": "1.90",
+                "X": "3.40",
+                "2": "3.80",
+                "1X": "1.22",
+                "12": "1.30",
+                "X2": "1.80",
+                "O1.5": "1.30",
+                "O2.5": "1.95",
+                "O3.5": "3.40"
+            },
+            "prono": "OVER 1.5",
+            "confidence": "86%",
+            "desc": "Analisi algoritmica ufficiale: Jamaica U17 vs Côte d'Ivoire U17."
+        },
+        {
+            "time": "14:00",
+            "home": "Uzbekistan U17",
+            "away": "Italy U17",
+            "odds": {
+                "1": "1.90",
+                "X": "3.40",
+                "2": "3.80",
+                "1X": "1.22",
+                "12": "1.30",
+                "X2": "1.80",
+                "O1.5": "1.30",
+                "O2.5": "1.95",
+                "O3.5": "3.40"
+            },
+            "prono": "OVER 1.5",
+            "confidence": "86%",
+            "desc": "Analisi algoritmica ufficiale: Uzbekistan U17 vs Italy U17."
+        },
+        {
+            "time": "15:00",
+            "home": "China PR U17",
+            "away": "Fiji U17",
+            "odds": {
+                "1": "1.90",
+                "X": "3.40",
+                "2": "3.80",
+                "1X": "1.22",
+                "12": "1.30",
+                "X2": "1.80",
+                "O1.5": "1.30",
+                "O2.5": "1.95",
+                "O3.5": "3.40"
+            },
+            "prono": "OVER 1.5",
+            "confidence": "86%",
+            "desc": "Analisi algoritmica ufficiale: China PR U17 vs Fiji U17."
+        },
+        {
+            "time": "15:00",
+            "home": "Morocco U17",
+            "away": "Spain U17",
+            "odds": {
+                "1": "1.90",
+                "X": "3.40",
+                "2": "3.80",
+                "1X": "1.22",
+                "12": "1.30",
+                "X2": "1.80",
+                "O1.5": "1.30",
+                "O2.5": "1.95",
+                "O3.5": "3.40"
+            },
+            "prono": "OVER 1.5",
+            "confidence": "86%",
+            "desc": "Analisi algoritmica ufficiale: Morocco U17 vs Spain U17."
+        },
+        {
+            "time": "16:00",
+            "home": "Croatia U17",
+            "away": "Cuba U17",
+            "odds": {
+                "1": "1.90",
+                "X": "3.40",
+                "2": "3.80",
+                "1X": "1.22",
+                "12": "1.30",
+                "X2": "1.80",
+                "O1.5": "1.30",
+                "O2.5": "1.95",
+                "O3.5": "3.40"
+            },
+            "prono": "OVER 1.5",
+            "confidence": "86%",
+            "desc": "Analisi algoritmica ufficiale: Croatia U17 vs Cuba U17."
+        },
+        {
+            "time": "16:00",
+            "home": "Tajikistan U17",
+            "away": "Senegal U17",
+            "odds": {
+                "1": "1.90",
+                "X": "3.40",
+                "2": "3.80",
+                "1X": "1.22",
+                "12": "1.30",
+                "X2": "1.80",
+                "O1.5": "1.30",
+                "O2.5": "1.95",
+                "O3.5": "3.40"
+            },
+            "prono": "OVER 1.5",
+            "confidence": "86%",
+            "desc": "Analisi algoritmica ufficiale: Tajikistan U17 vs Senegal U17."
         }
     ],
     "Zambia - Super League": [
         {
             "time": "13:00",
-            "home": "Kabwe Warriors",
-            "away": "Nkwazi",
+            "home": "Red Arrows",
+            "away": "Green Buffaloes",
             "odds": {
                 "1": "1.90",
                 "X": "3.40",
@@ -2841,12 +1456,12 @@
             },
             "prono": "OVER 1.5",
             "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Kabwe Warriors vs Nkwazi."
+            "desc": "Analisi algoritmica ufficiale: Red Arrows vs Green Buffaloes."
         },
         {
             "time": "13:00",
-            "home": "NAPSA Stars",
-            "away": "Konkola Blades",
+            "home": "Chirundu Utd",
+            "away": "ZESCO United",
             "odds": {
                 "1": "1.90",
                 "X": "3.40",
@@ -2860,12 +1475,12 @@
             },
             "prono": "OVER 1.5",
             "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: NAPSA Stars vs Konkola Blades."
+            "desc": "Analisi algoritmica ufficiale: Chirundu Utd vs ZESCO United."
         },
         {
             "time": "13:00",
-            "home": "Nchanga Rangers",
-            "away": "Kansanshi Dynamos",
+            "home": "Makeni All Stars",
+            "away": "Power Dynamos",
             "odds": {
                 "1": "1.90",
                 "X": "3.40",
@@ -2879,12 +1494,12 @@
             },
             "prono": "OVER 1.5",
             "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Nchanga Rangers vs Kansanshi Dynamos."
+            "desc": "Analisi algoritmica ufficiale: Makeni All Stars vs Power Dynamos."
         },
         {
             "time": "13:00",
-            "home": "Roan United",
-            "away": "Mufulira Wanderers",
+            "home": "Mutondo Stars",
+            "away": "Green Eagles",
             "odds": {
                 "1": "1.90",
                 "X": "3.40",
@@ -2898,92 +1513,14 @@
             },
             "prono": "OVER 1.5",
             "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Roan United vs Mufulira Wanderers."
-        },
-        {
-            "time": "13:00",
-            "home": "Trident",
-            "away": "Man Utd Zambia Academy",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Trident vs Man Utd Zambia Academy."
-        },
-        {
-            "time": "13:00",
-            "home": "Zanaco",
-            "away": "Nkana",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Zanaco vs Nkana."
-        }
-    ],
-    "Rwanda - National Soccer League": [
-        {
-            "time": "13:00",
-            "home": "Al Merreikh",
-            "away": "AS Kigali",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Al Merreikh vs AS Kigali."
-        },
-        {
-            "time": "16:30",
-            "home": "APR",
-            "away": "Musanze",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: APR vs Musanze."
+            "desc": "Analisi algoritmica ufficiale: Mutondo Stars vs Green Eagles."
         }
     ],
     "Uganda - Premier League": [
         {
             "time": "13:00",
-            "home": "NEC",
-            "away": "Kataka",
+            "home": "KCCA",
+            "away": "BUL",
             "odds": {
                 "1": "1.90",
                 "X": "3.40",
@@ -2997,12 +1534,12 @@
             },
             "prono": "OVER 1.5",
             "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: NEC vs Kataka."
+            "desc": "Analisi algoritmica ufficiale: KCCA vs BUL."
         },
         {
-            "time": "13:00",
-            "home": "Ntugasaze",
-            "away": "Police",
+            "time": "16:00",
+            "home": "URA",
+            "away": "Kigezi HomeBoyz",
             "odds": {
                 "1": "1.90",
                 "X": "3.40",
@@ -3016,115 +1553,14 @@
             },
             "prono": "OVER 1.5",
             "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Ntugasaze vs Police."
-        },
-        {
-            "time": "13:00",
-            "home": "Maroons",
-            "away": "SC Villa",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Maroons vs SC Villa."
+            "desc": "Analisi algoritmica ufficiale: URA vs Kigezi HomeBoyz."
         }
     ],
-    "Ethiopia - Premier League": [
-        {
-            "time": "13:00",
-            "home": "Bahardar",
-            "away": "Welwalo Adigrat Uni",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Bahardar vs Welwalo Adigrat Uni."
-        }
-    ],
-    "Congo - Ligue 1": [
-        {
-            "time": "13:00",
-            "home": "Racing Club Brazzavile",
-            "away": "Étoile du Congo",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Racing Club Brazzavile vs Étoile du Congo."
-        },
-        {
-            "time": "15:00",
-            "home": "Red Stars",
-            "away": "Diables Noirs",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Red Stars vs Diables Noirs."
-        }
-    ],
-    "Italy - Serie C - Girone C": [
-        {
-            "time": "13:30",
-            "home": "Audace Cerignola",
-            "away": "Inter U23",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Audace Cerignola vs Inter U23."
-        }
-    ],
-    "Algeria - Ligue 1": [
+    "Russia - Cup": [
         {
             "time": "14:00",
-            "home": "USM Alger",
-            "away": "MC Alger",
+            "home": "FC Orenburg",
+            "away": "Spartak Moscow",
             "odds": {
                 "1": "1.90",
                 "X": "3.40",
@@ -3138,12 +1574,12 @@
             },
             "prono": "OVER 1.5",
             "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: USM Alger vs MC Alger."
+            "desc": "Analisi algoritmica ufficiale: FC Orenburg vs Spartak Moscow."
         },
         {
-            "time": "14:25",
-            "home": "CR Belouizdad",
-            "away": "CS Constantine",
+            "time": "16:30",
+            "home": "Dynamo",
+            "away": "Fakel",
             "odds": {
                 "1": "1.90",
                 "X": "3.40",
@@ -3157,14 +1593,14 @@
             },
             "prono": "OVER 1.5",
             "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: CR Belouizdad vs CS Constantine."
+            "desc": "Analisi algoritmica ufficiale: Dynamo vs Fakel."
         }
     ],
-    "Botswana - Premier League": [
+    "Russia - First League": [
         {
             "time": "14:00",
-            "home": "Enesia",
-            "away": "Police XI",
+            "home": "Ural",
+            "away": "Arsenal Tula",
             "odds": {
                 "1": "1.90",
                 "X": "3.40",
@@ -3178,12 +1614,12 @@
             },
             "prono": "OVER 1.5",
             "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Enesia vs Police XI."
+            "desc": "Analisi algoritmica ufficiale: Ural vs Arsenal Tula."
         },
         {
-            "time": "14:00",
-            "home": "Sua Flamingoes",
-            "away": "Galaxy",
+            "time": "16:00",
+            "home": "Nizhny Novgorod",
+            "away": "Tekstilshchik",
             "odds": {
                 "1": "1.90",
                 "X": "3.40",
@@ -3197,52 +1633,14 @@
             },
             "prono": "OVER 1.5",
             "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Sua Flamingoes vs Galaxy."
-        },
-        {
-            "time": "17:00",
-            "home": "Matebele",
-            "away": "Gaborone United",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Matebele vs Gaborone United."
-        },
-        {
-            "time": "17:00",
-            "home": "Tonota",
-            "away": "Nico United",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Tonota vs Nico United."
+            "desc": "Analisi algoritmica ufficiale: Nizhny Novgorod vs Tekstilshchik."
         }
     ],
-    "World - AGCFF Gulf Champions League": [
+    "Libya - Premier League": [
         {
             "time": "14:00",
-            "home": "Kazma",
-            "away": "Erbil",
+            "home": "Assabah SC",
+            "away": "Al Ahli Tripoli",
             "odds": {
                 "1": "1.90",
                 "X": "3.40",
@@ -3256,52 +1654,14 @@
             },
             "prono": "OVER 1.5",
             "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Kazma vs Erbil."
-        },
-        {
-            "time": "15:30",
-            "home": "Al Sha'ab Hadhramaut",
-            "away": "Al-Shabab",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Al Sha'ab Hadhramaut vs Al-Shabab."
-        },
-        {
-            "time": "17:00",
-            "home": "Qatar SC",
-            "away": "Al Nasr",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Qatar SC vs Al Nasr."
+            "desc": "Analisi algoritmica ufficiale: Assabah SC vs Al Ahli Tripoli."
         }
     ],
     "Qatar - Second Division": [
         {
             "time": "14:15",
-            "home": "Al Kharaitiyat",
-            "away": "Al-Gharafa B",
+            "home": "Muaither SC",
+            "away": "Al Waab",
             "odds": {
                 "1": "1.90",
                 "X": "3.40",
@@ -3315,12 +1675,12 @@
             },
             "prono": "OVER 1.5",
             "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Al Kharaitiyat vs Al-Gharafa B."
+            "desc": "Analisi algoritmica ufficiale: Muaither SC vs Al Waab."
         },
         {
             "time": "16:30",
-            "home": "Al Bidda SC",
-            "away": "Al-Markhiya",
+            "home": "Al Mesaimeer",
+            "away": "Qatar U23",
             "odds": {
                 "1": "1.90",
                 "X": "3.40",
@@ -3334,12 +1694,12 @@
             },
             "prono": "OVER 1.5",
             "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Al Bidda SC vs Al-Markhiya."
+            "desc": "Analisi algoritmica ufficiale: Al Mesaimeer vs Qatar U23."
         },
         {
             "time": "16:30",
-            "home": "Al-Khor",
-            "away": "Al Shamal II",
+            "home": "UMM Salal",
+            "away": "Al Rayyan SC B",
             "odds": {
                 "1": "1.90",
                 "X": "3.40",
@@ -3353,14 +1713,14 @@
             },
             "prono": "OVER 1.5",
             "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Al-Khor vs Al Shamal II."
+            "desc": "Analisi algoritmica ufficiale: UMM Salal vs Al Rayyan SC B."
         }
     ],
-    "Angola - Girabola": [
+    "Kuwait - Emir Cup": [
         {
-            "time": "14:30",
-            "home": "1º de Agosto",
-            "away": "Kabuscorp",
+            "time": "14:20",
+            "home": "Al Salmiyah",
+            "away": "Al Tadhamon",
             "odds": {
                 "1": "1.90",
                 "X": "3.40",
@@ -3374,12 +1734,12 @@
             },
             "prono": "OVER 1.5",
             "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: 1º de Agosto vs Kabuscorp."
+            "desc": "Analisi algoritmica ufficiale: Al Salmiyah vs Al Tadhamon."
         },
         {
-            "time": "16:30",
-            "home": "Petro de Luanda",
-            "away": "Sporting de Cabinda",
+            "time": "17:20",
+            "home": "Al Arabi",
+            "away": "Khaitan",
             "odds": {
                 "1": "1.90",
                 "X": "3.40",
@@ -3393,14 +1753,14 @@
             },
             "prono": "OVER 1.5",
             "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Petro de Luanda vs Sporting de Cabinda."
+            "desc": "Analisi algoritmica ufficiale: Al Arabi vs Khaitan."
         }
     ],
-    "Cameroon - Elite One": [
+    "Saudi-Arabia - Pro League": [
         {
-            "time": "14:30",
-            "home": "Victoria United",
-            "away": "Aigle Royal",
+            "time": "14:25",
+            "home": "Al-Fateh",
+            "away": "Al Riyadh",
             "odds": {
                 "1": "1.90",
                 "X": "3.40",
@@ -3414,33 +1774,12 @@
             },
             "prono": "OVER 1.5",
             "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Victoria United vs Aigle Royal."
-        }
-    ],
-    "Russia - Cup": [
-        {
-            "time": "15:00",
-            "home": "Akhmat",
-            "away": "FC Krasnodar",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Akhmat vs FC Krasnodar."
+            "desc": "Analisi algoritmica ufficiale: Al-Fateh vs Al Riyadh."
         },
         {
-            "time": "15:00",
-            "home": "Dinamo Makhachkala",
-            "away": "Baltika",
+            "time": "15:05",
+            "home": "Abha",
+            "away": "Al Shabab",
             "odds": {
                 "1": "1.90",
                 "X": "3.40",
@@ -3454,12 +1793,12 @@
             },
             "prono": "OVER 1.5",
             "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Dinamo Makhachkala vs Baltika."
+            "desc": "Analisi algoritmica ufficiale: Abha vs Al Shabab."
         },
         {
             "time": "17:30",
-            "home": "Lokomotiv",
-            "away": "FC Rostov",
+            "home": "Al-Faisaly FC",
+            "away": "Al Diriyah",
             "odds": {
                 "1": "1.90",
                 "X": "3.40",
@@ -3473,33 +1812,14 @@
             },
             "prono": "OVER 1.5",
             "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Lokomotiv vs FC Rostov."
-        },
-        {
-            "time": "17:30",
-            "home": "Rubin",
-            "away": "Rodina Moskva",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Rubin vs Rodina Moskva."
+            "desc": "Analisi algoritmica ufficiale: Al-Faisaly FC vs Al Diriyah."
         }
     ],
-    "Bulgaria - Second League": [
+    "Romania - Liga II": [
         {
-            "time": "15:00",
-            "home": "Ludogorets II",
-            "away": "Etar Veliko Tarnovo",
+            "time": "14:45",
+            "home": "Gloria Bistriţa",
+            "away": "Slatina",
             "odds": {
                 "1": "1.90",
                 "X": "3.40",
@@ -3513,14 +1833,14 @@
             },
             "prono": "OVER 1.5",
             "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Ludogorets II vs Etar Veliko Tarnovo."
+            "desc": "Analisi algoritmica ufficiale: Gloria Bistriţa vs Slatina."
         }
     ],
-    "Portugal - Júniores U19": [
+    "Jordan - League": [
         {
             "time": "15:00",
-            "home": "União Leiria U19",
-            "away": "Benfica U19",
+            "home": "Al Buqa'a",
+            "away": "Al Jazeera",
             "odds": {
                 "1": "1.90",
                 "X": "3.40",
@@ -3534,14 +1854,14 @@
             },
             "prono": "OVER 1.5",
             "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: União Leiria U19 vs Benfica U19."
+            "desc": "Analisi algoritmica ufficiale: Al Buqa'a vs Al Jazeera."
         }
     ],
-    "Portugal - Liga Revelação U23": [
+    "Syria - Premier League": [
         {
             "time": "15:00",
-            "home": "Famalicão U23",
-            "away": "Gil Vicente U23",
+            "home": "Tishreen",
+            "away": "Wathba",
             "odds": {
                 "1": "1.90",
                 "X": "3.40",
@@ -3555,153 +1875,14 @@
             },
             "prono": "OVER 1.5",
             "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Famalicão U23 vs Gil Vicente U23."
-        },
-        {
-            "time": "15:00",
-            "home": "Moreirense U23",
-            "away": "Penafiel U23",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Moreirense U23 vs Penafiel U23."
-        }
-    ],
-    "Egypt - Premier League": [
-        {
-            "time": "15:00",
-            "home": "El Geish",
-            "away": "Future FC",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: El Geish vs Future FC."
-        },
-        {
-            "time": "18:00",
-            "home": "Enppi",
-            "away": "Ceramica Cleopatra",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Enppi vs Ceramica Cleopatra."
-        },
-        {
-            "time": "18:00",
-            "home": "Ghazl El Mehalla",
-            "away": "Petrojet",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Ghazl El Mehalla vs Petrojet."
-        }
-    ],
-    "Slovenia - Cup": [
-        {
-            "time": "15:00",
-            "home": "Tabor Sežana",
-            "away": "Fužinar",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Tabor Sežana vs Fužinar."
-        },
-        {
-            "time": "17:00",
-            "home": "Bravo",
-            "away": "Odranci",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Bravo vs Odranci."
-        }
-    ],
-    "Italy - Coppa Italia Serie D": [
-        {
-            "time": "15:00",
-            "home": "Pro Patria",
-            "away": "Sanremese",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Pro Patria vs Sanremese."
+            "desc": "Analisi algoritmica ufficiale: Tishreen vs Wathba."
         }
     ],
     "Mexico - Liga MX U21": [
         {
             "time": "15:00",
-            "home": "UNAM Pumas U21",
-            "away": "Puebla U21",
+            "home": "Monterrey U21",
+            "away": "Toluca U21",
             "odds": {
                 "1": "1.90",
                 "X": "3.40",
@@ -3715,33 +1896,14 @@
             },
             "prono": "OVER 1.5",
             "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: UNAM Pumas U21 vs Puebla U21."
-        },
-        {
-            "time": "16:00",
-            "home": "Atlante U21",
-            "away": "Club Leon U21",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Atlante U21 vs Club Leon U21."
+            "desc": "Analisi algoritmica ufficiale: Monterrey U21 vs Toluca U21."
         }
     ],
-    "Germany - U19 Bundesliga": [
+    "World - UEFA Europa Conference League": [
         {
-            "time": "16:00",
-            "home": "Preußen Münster U19",
-            "away": "Hannover 96 U19",
+            "time": "15:30",
+            "home": "Kairat Almaty",
+            "away": "Mjallby AIF",
             "odds": {
                 "1": "1.90",
                 "X": "3.40",
@@ -3755,157 +1917,12 @@
             },
             "prono": "OVER 1.5",
             "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Preußen Münster U19 vs Hannover 96 U19."
-        }
-    ],
-    "Kuwait - Emir Cup": [
-        {
-            "time": "16:00",
-            "home": "Al Qadsia",
-            "away": "Al Fahaheel",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Al Qadsia vs Al Fahaheel."
-        }
-    ],
-    "Poland - II Liga - East": [
-        {
-            "time": "16:30",
-            "home": "Resovia Rzeszów",
-            "away": "Świt Skolwin",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Resovia Rzeszów vs Świt Skolwin."
-        }
-    ],
-    "Spain - Segunda División RFEF - Group 4": [
-        {
-            "time": "17:00",
-            "home": "Sevilla Atletico",
-            "away": "Recreativo Huelva",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Sevilla Atletico vs Recreativo Huelva."
-        }
-    ],
-    "Italy - Serie C - Girone B": [
-        {
-            "time": "17:00",
-            "home": "Atalanta II",
-            "away": "Pineto",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Atalanta II vs Pineto."
-        }
-    ],
-    "Peru - Copa Perú": [
-        {
-            "time": "17:00",
-            "home": "Minas Pamputa",
-            "away": "Cajabamba",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Minas Pamputa vs Cajabamba."
-        },
-        {
-            "time": "20:00",
-            "home": "Viargoca",
-            "away": "Sociedad de Tiro 28",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Viargoca vs Sociedad de Tiro 28."
-        }
-    ],
-    "World - UEFA Champions League": [
-        {
-            "time": "17:45",
-            "home": "Sabah FA",
-            "away": "Barcelona",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Sabah FA vs Barcelona."
+            "desc": "Analisi algoritmica ufficiale: Kairat Almaty vs Mjallby AIF."
         },
         {
             "time": "17:45",
-            "home": "Slavia Praha",
-            "away": "Villarreal",
+            "home": "Ajax",
+            "away": "FC Thun",
             "odds": {
                 "1": "1.90",
                 "X": "3.40",
@@ -3919,12 +1936,164 @@
             },
             "prono": "OVER 1.5",
             "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Slavia Praha vs Villarreal."
+            "desc": "Analisi algoritmica ufficiale: Ajax vs FC Thun."
+        },
+        {
+            "time": "17:45",
+            "home": "Brann",
+            "away": "Aarhus",
+            "odds": {
+                "1": "1.90",
+                "X": "3.40",
+                "2": "3.80",
+                "1X": "1.22",
+                "12": "1.30",
+                "X2": "1.80",
+                "O1.5": "1.30",
+                "O2.5": "1.95",
+                "O3.5": "3.40"
+            },
+            "prono": "OVER 1.5",
+            "confidence": "86%",
+            "desc": "Analisi algoritmica ufficiale: Brann vs Aarhus."
+        },
+        {
+            "time": "17:45",
+            "home": "Brighton",
+            "away": "Universitatea Craiova",
+            "odds": {
+                "1": "1.90",
+                "X": "3.40",
+                "2": "3.80",
+                "1X": "1.22",
+                "12": "1.30",
+                "X2": "1.80",
+                "O1.5": "1.30",
+                "O2.5": "1.95",
+                "O3.5": "3.40"
+            },
+            "prono": "OVER 1.5",
+            "confidence": "86%",
+            "desc": "Analisi algoritmica ufficiale: Brighton vs Universitatea Craiova."
+        },
+        {
+            "time": "17:45",
+            "home": "Egnatia Rrogozhinë",
+            "away": "Lincoln Red Imps FC",
+            "odds": {
+                "1": "1.90",
+                "X": "3.40",
+                "2": "3.80",
+                "1X": "1.22",
+                "12": "1.30",
+                "X2": "1.80",
+                "O1.5": "1.30",
+                "O2.5": "1.95",
+                "O3.5": "3.40"
+            },
+            "prono": "OVER 1.5",
+            "confidence": "86%",
+            "desc": "Analisi algoritmica ufficiale: Egnatia Rrogozhinë vs Lincoln Red Imps FC."
+        },
+        {
+            "time": "17:45",
+            "home": "Heart Of Midlothian",
+            "away": "Monaco",
+            "odds": {
+                "1": "1.90",
+                "X": "3.40",
+                "2": "3.80",
+                "1X": "1.22",
+                "12": "1.30",
+                "X2": "1.80",
+                "O1.5": "1.30",
+                "O2.5": "1.95",
+                "O3.5": "3.40"
+            },
+            "prono": "OVER 1.5",
+            "confidence": "86%",
+            "desc": "Analisi algoritmica ufficiale: Heart Of Midlothian vs Monaco."
+        },
+        {
+            "time": "17:45",
+            "home": "FC Iberia 1999",
+            "away": "Getafe",
+            "odds": {
+                "1": "1.90",
+                "X": "3.40",
+                "2": "3.80",
+                "1X": "1.22",
+                "12": "1.30",
+                "X2": "1.80",
+                "O1.5": "1.30",
+                "O2.5": "1.95",
+                "O3.5": "3.40"
+            },
+            "prono": "OVER 1.5",
+            "confidence": "86%",
+            "desc": "Analisi algoritmica ufficiale: FC Iberia 1999 vs Getafe."
+        },
+        {
+            "time": "17:45",
+            "home": "FK Jablonec",
+            "away": "FC Lugano",
+            "odds": {
+                "1": "1.90",
+                "X": "3.40",
+                "2": "3.80",
+                "1X": "1.22",
+                "12": "1.30",
+                "X2": "1.80",
+                "O1.5": "1.30",
+                "O2.5": "1.95",
+                "O3.5": "3.40"
+            },
+            "prono": "OVER 1.5",
+            "confidence": "86%",
+            "desc": "Analisi algoritmica ufficiale: FK Jablonec vs FC Lugano."
+        },
+        {
+            "time": "17:45",
+            "home": "Kauno Žalgiris",
+            "away": "Riga",
+            "odds": {
+                "1": "1.90",
+                "X": "3.40",
+                "2": "3.80",
+                "1X": "1.22",
+                "12": "1.30",
+                "X2": "1.80",
+                "O1.5": "1.30",
+                "O2.5": "1.95",
+                "O3.5": "3.40"
+            },
+            "prono": "OVER 1.5",
+            "confidence": "86%",
+            "desc": "Analisi algoritmica ufficiale: Kauno Žalgiris vs Riga."
+        },
+        {
+            "time": "17:45",
+            "home": "Pafos",
+            "away": "FC Midtjylland",
+            "odds": {
+                "1": "1.90",
+                "X": "3.40",
+                "2": "3.80",
+                "1X": "1.22",
+                "12": "1.30",
+                "X2": "1.80",
+                "O1.5": "1.30",
+                "O2.5": "1.95",
+                "O3.5": "3.40"
+            },
+            "prono": "OVER 1.5",
+            "confidence": "86%",
+            "desc": "Analisi algoritmica ufficiale: Pafos vs FC Midtjylland."
         },
         {
             "time": "20:00",
-            "home": "Atletico Madrid",
-            "away": "Viking",
+            "home": "Borac Banja Luka",
+            "away": "Atalanta",
             "odds": {
                 "1": "1.90",
                 "X": "3.40",
@@ -3938,12 +2107,12 @@
             },
             "prono": "OVER 1.5",
             "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Atletico Madrid vs Viking."
+            "desc": "Analisi algoritmica ufficiale: Borac Banja Luka vs Atalanta."
         },
         {
             "time": "20:00",
-            "home": "Club Brugge KV",
-            "away": "Liverpool",
+            "home": "SC Braga",
+            "away": "KuPS",
             "odds": {
                 "1": "1.90",
                 "X": "3.40",
@@ -3957,12 +2126,12 @@
             },
             "prono": "OVER 1.5",
             "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Club Brugge KV vs Liverpool."
+            "desc": "Analisi algoritmica ufficiale: SC Braga vs KuPS."
         },
         {
             "time": "20:00",
-            "home": "Inter",
-            "away": "VfB Stuttgart",
+            "home": "CSKA Sofia",
+            "away": "Trabzonspor",
             "odds": {
                 "1": "1.90",
                 "X": "3.40",
@@ -3976,12 +2145,12 @@
             },
             "prono": "OVER 1.5",
             "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Inter vs VfB Stuttgart."
+            "desc": "Analisi algoritmica ufficiale: CSKA Sofia vs Trabzonspor."
         },
         {
             "time": "20:00",
-            "home": "Lille",
-            "away": "Bayern München",
+            "home": "SC Freiburg",
+            "away": "Twente",
             "odds": {
                 "1": "1.90",
                 "X": "3.40",
@@ -3995,12 +2164,12 @@
             },
             "prono": "OVER 1.5",
             "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Lille vs Bayern München."
+            "desc": "Analisi algoritmica ufficiale: SC Freiburg vs Twente."
         },
         {
             "time": "20:00",
-            "home": "Paris Saint Germain",
-            "away": "AS Roma",
+            "home": "Gent",
+            "away": "FK Crvena Zvezda",
             "odds": {
                 "1": "1.90",
                 "X": "3.40",
@@ -4014,12 +2183,12 @@
             },
             "prono": "OVER 1.5",
             "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Paris Saint Germain vs AS Roma."
+            "desc": "Analisi algoritmica ufficiale: Gent vs FK Crvena Zvezda."
         },
         {
             "time": "20:00",
-            "home": "Shakhtar Donetsk",
-            "away": "Fenerbahçe",
+            "home": "HNK Hajduk Split",
+            "away": "St. Truiden",
             "odds": {
                 "1": "1.90",
                 "X": "3.40",
@@ -4033,12 +2202,12 @@
             },
             "prono": "OVER 1.5",
             "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Shakhtar Donetsk vs Fenerbahçe."
+            "desc": "Analisi algoritmica ufficiale: HNK Hajduk Split vs St. Truiden."
         },
         {
             "time": "20:00",
-            "home": "Sporting CP",
-            "away": "Manchester United",
+            "home": "Inter Club d'Escaldes",
+            "away": "FC Copenhagen",
             "odds": {
                 "1": "1.90",
                 "X": "3.40",
@@ -4052,14 +2221,478 @@
             },
             "prono": "OVER 1.5",
             "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Sporting CP vs Manchester United."
+            "desc": "Analisi algoritmica ufficiale: Inter Club d'Escaldes vs FC Copenhagen."
+        },
+        {
+            "time": "20:00",
+            "home": "FC Nordsjaelland",
+            "away": "Panathinaikos",
+            "odds": {
+                "1": "1.90",
+                "X": "3.40",
+                "2": "3.80",
+                "1X": "1.22",
+                "12": "1.30",
+                "X2": "1.80",
+                "O1.5": "1.30",
+                "O2.5": "1.95",
+                "O3.5": "3.40"
+            },
+            "prono": "OVER 1.5",
+            "confidence": "86%",
+            "desc": "Analisi algoritmica ufficiale: FC Nordsjaelland vs Panathinaikos."
         }
     ],
-    "Germany - Regionalliga - SudWest": [
+    "Israel - Liga Alef": [
+        {
+            "time": "16:00",
+            "home": "Hapoel Nazareth Illit",
+            "away": "Maccabi K. Ata Bialik",
+            "odds": {
+                "1": "1.90",
+                "X": "3.40",
+                "2": "3.80",
+                "1X": "1.22",
+                "12": "1.30",
+                "X2": "1.80",
+                "O1.5": "1.30",
+                "O2.5": "1.95",
+                "O3.5": "3.40"
+            },
+            "prono": "OVER 1.5",
+            "confidence": "86%",
+            "desc": "Analisi algoritmica ufficiale: Hapoel Nazareth Illit vs Maccabi K. Ata Bialik."
+        },
+        {
+            "time": "17:45",
+            "home": "Hapoel Mahane Yehuda",
+            "away": "Hapoel Marmorek",
+            "odds": {
+                "1": "1.90",
+                "X": "3.40",
+                "2": "3.80",
+                "1X": "1.22",
+                "12": "1.30",
+                "X2": "1.80",
+                "O1.5": "1.30",
+                "O2.5": "1.95",
+                "O3.5": "3.40"
+            },
+            "prono": "OVER 1.5",
+            "confidence": "86%",
+            "desc": "Analisi algoritmica ufficiale: Hapoel Mahane Yehuda vs Hapoel Marmorek."
+        }
+    ],
+    "Liberia - LFA First Division": [
+        {
+            "time": "16:00",
+            "home": "Discoveries",
+            "away": "Gardnersville",
+            "odds": {
+                "1": "1.90",
+                "X": "3.40",
+                "2": "3.80",
+                "1X": "1.22",
+                "12": "1.30",
+                "X2": "1.80",
+                "O1.5": "1.30",
+                "O2.5": "1.95",
+                "O3.5": "3.40"
+            },
+            "prono": "OVER 1.5",
+            "confidence": "86%",
+            "desc": "Analisi algoritmica ufficiale: Discoveries vs Gardnersville."
+        },
+        {
+            "time": "16:00",
+            "home": "Golden Dream",
+            "away": "LPRC Oilers",
+            "odds": {
+                "1": "1.90",
+                "X": "3.40",
+                "2": "3.80",
+                "1X": "1.22",
+                "12": "1.30",
+                "X2": "1.80",
+                "O1.5": "1.30",
+                "O2.5": "1.95",
+                "O3.5": "3.40"
+            },
+            "prono": "OVER 1.5",
+            "confidence": "86%",
+            "desc": "Analisi algoritmica ufficiale: Golden Dream vs LPRC Oilers."
+        }
+    ],
+    "Botswana - Premier League": [
+        {
+            "time": "17:00",
+            "home": "Centre Chiefs",
+            "away": "Orapa United",
+            "odds": {
+                "1": "1.90",
+                "X": "3.40",
+                "2": "3.80",
+                "1X": "1.22",
+                "12": "1.30",
+                "X2": "1.80",
+                "O1.5": "1.30",
+                "O2.5": "1.95",
+                "O3.5": "3.40"
+            },
+            "prono": "OVER 1.5",
+            "confidence": "86%",
+            "desc": "Analisi algoritmica ufficiale: Centre Chiefs vs Orapa United."
+        }
+    ],
+    "World - UEFA Europa League": [
+        {
+            "time": "17:45",
+            "home": "Beşiktaş",
+            "away": "Hapoel Beer Sheva",
+            "odds": {
+                "1": "1.90",
+                "X": "3.40",
+                "2": "3.80",
+                "1X": "1.22",
+                "12": "1.30",
+                "X2": "1.80",
+                "O1.5": "1.30",
+                "O2.5": "1.95",
+                "O3.5": "3.40"
+            },
+            "prono": "OVER 1.5",
+            "confidence": "86%",
+            "desc": "Analisi algoritmica ufficiale: Beşiktaş vs Hapoel Beer Sheva."
+        },
+        {
+            "time": "17:45",
+            "home": "Celta Vigo",
+            "away": "Bournemouth",
+            "odds": {
+                "1": "1.90",
+                "X": "3.40",
+                "2": "3.80",
+                "1X": "1.22",
+                "12": "1.30",
+                "X2": "1.80",
+                "O1.5": "1.30",
+                "O2.5": "1.95",
+                "O3.5": "3.40"
+            },
+            "prono": "OVER 1.5",
+            "confidence": "86%",
+            "desc": "Analisi algoritmica ufficiale: Celta Vigo vs Bournemouth."
+        },
+        {
+            "time": "17:45",
+            "home": "Dinamo Zagreb",
+            "away": "Bayer Leverkusen",
+            "odds": {
+                "1": "1.90",
+                "X": "3.40",
+                "2": "3.80",
+                "1X": "1.22",
+                "12": "1.30",
+                "X2": "1.80",
+                "O1.5": "1.30",
+                "O2.5": "1.95",
+                "O3.5": "3.40"
+            },
+            "prono": "OVER 1.5",
+            "confidence": "86%",
+            "desc": "Analisi algoritmica ufficiale: Dinamo Zagreb vs Bayer Leverkusen."
+        },
+        {
+            "time": "17:45",
+            "home": "Marseille",
+            "away": "Levski Sofia",
+            "odds": {
+                "1": "1.90",
+                "X": "3.40",
+                "2": "3.80",
+                "1X": "1.22",
+                "12": "1.30",
+                "X2": "1.80",
+                "O1.5": "1.30",
+                "O2.5": "1.95",
+                "O3.5": "3.40"
+            },
+            "prono": "OVER 1.5",
+            "confidence": "86%",
+            "desc": "Analisi algoritmica ufficiale: Marseille vs Levski Sofia."
+        },
+        {
+            "time": "17:45",
+            "home": "Olympiakos Piraeus",
+            "away": "AC Milan",
+            "odds": {
+                "1": "1.90",
+                "X": "3.40",
+                "2": "3.80",
+                "1X": "1.22",
+                "12": "1.30",
+                "X2": "1.80",
+                "O1.5": "1.30",
+                "O2.5": "1.95",
+                "O3.5": "3.40"
+            },
+            "prono": "OVER 1.5",
+            "confidence": "86%",
+            "desc": "Analisi algoritmica ufficiale: Olympiakos Piraeus vs AC Milan."
+        },
+        {
+            "time": "17:45",
+            "home": "Plzen",
+            "away": "Benfica",
+            "odds": {
+                "1": "1.90",
+                "X": "3.40",
+                "2": "3.80",
+                "1X": "1.22",
+                "12": "1.30",
+                "X2": "1.80",
+                "O1.5": "1.30",
+                "O2.5": "1.95",
+                "O3.5": "3.40"
+            },
+            "prono": "OVER 1.5",
+            "confidence": "86%",
+            "desc": "Analisi algoritmica ufficiale: Plzen vs Benfica."
+        },
+        {
+            "time": "17:45",
+            "home": "Union St. Gilloise",
+            "away": "Lech Poznan",
+            "odds": {
+                "1": "1.90",
+                "X": "3.40",
+                "2": "3.80",
+                "1X": "1.22",
+                "12": "1.30",
+                "X2": "1.80",
+                "O1.5": "1.30",
+                "O2.5": "1.95",
+                "O3.5": "3.40"
+            },
+            "prono": "OVER 1.5",
+            "confidence": "86%",
+            "desc": "Analisi algoritmica ufficiale: Union St. Gilloise vs Lech Poznan."
+        },
+        {
+            "time": "17:45",
+            "home": "Red Bull Salzburg",
+            "away": "Ararat-Armenia",
+            "odds": {
+                "1": "1.90",
+                "X": "3.40",
+                "2": "3.80",
+                "1X": "1.22",
+                "12": "1.30",
+                "X2": "1.80",
+                "O1.5": "1.30",
+                "O2.5": "1.95",
+                "O3.5": "3.40"
+            },
+            "prono": "OVER 1.5",
+            "confidence": "86%",
+            "desc": "Analisi algoritmica ufficiale: Red Bull Salzburg vs Ararat-Armenia."
+        },
+        {
+            "time": "20:00",
+            "home": "Crystal Palace",
+            "away": "Real Sociedad",
+            "odds": {
+                "1": "1.90",
+                "X": "3.40",
+                "2": "3.80",
+                "1X": "1.22",
+                "12": "1.30",
+                "X2": "1.80",
+                "O1.5": "1.30",
+                "O2.5": "1.95",
+                "O3.5": "3.40"
+            },
+            "prono": "OVER 1.5",
+            "confidence": "86%",
+            "desc": "Analisi algoritmica ufficiale: Crystal Palace vs Real Sociedad."
+        },
+        {
+            "time": "20:00",
+            "home": "Ferencvarosi TC",
+            "away": "Celje",
+            "odds": {
+                "1": "1.90",
+                "X": "3.40",
+                "2": "3.80",
+                "1X": "1.22",
+                "12": "1.30",
+                "X2": "1.80",
+                "O1.5": "1.30",
+                "O2.5": "1.95",
+                "O3.5": "3.40"
+            },
+            "prono": "OVER 1.5",
+            "confidence": "86%",
+            "desc": "Analisi algoritmica ufficiale: Ferencvarosi TC vs Celje."
+        },
+        {
+            "time": "20:00",
+            "home": "1899 Hoffenheim",
+            "away": "Sturm Graz",
+            "odds": {
+                "1": "1.90",
+                "X": "3.40",
+                "2": "3.80",
+                "1X": "1.22",
+                "12": "1.30",
+                "X2": "1.80",
+                "O1.5": "1.30",
+                "O2.5": "1.95",
+                "O3.5": "3.40"
+            },
+            "prono": "OVER 1.5",
+            "confidence": "86%",
+            "desc": "Analisi algoritmica ufficiale: 1899 Hoffenheim vs Sturm Graz."
+        },
+        {
+            "time": "20:00",
+            "home": "Juventus",
+            "away": "Omonia Nicosia",
+            "odds": {
+                "1": "1.90",
+                "X": "3.40",
+                "2": "3.80",
+                "1X": "1.22",
+                "12": "1.30",
+                "X2": "1.80",
+                "O1.5": "1.30",
+                "O2.5": "1.95",
+                "O3.5": "3.40"
+            },
+            "prono": "OVER 1.5",
+            "confidence": "86%",
+            "desc": "Analisi algoritmica ufficiale: Juventus vs Omonia Nicosia."
+        },
+        {
+            "time": "20:00",
+            "home": "Lyon",
+            "away": "Lillestrom",
+            "odds": {
+                "1": "1.90",
+                "X": "3.40",
+                "2": "3.80",
+                "1X": "1.22",
+                "12": "1.30",
+                "X2": "1.80",
+                "O1.5": "1.30",
+                "O2.5": "1.95",
+                "O3.5": "3.40"
+            },
+            "prono": "OVER 1.5",
+            "confidence": "86%",
+            "desc": "Analisi algoritmica ufficiale: Lyon vs Lillestrom."
+        },
+        {
+            "time": "20:00",
+            "home": "NEC Nijmegen",
+            "away": "Rennes",
+            "odds": {
+                "1": "1.90",
+                "X": "3.40",
+                "2": "3.80",
+                "1X": "1.22",
+                "12": "1.30",
+                "X2": "1.80",
+                "O1.5": "1.30",
+                "O2.5": "1.95",
+                "O3.5": "3.40"
+            },
+            "prono": "OVER 1.5",
+            "confidence": "86%",
+            "desc": "Analisi algoritmica ufficiale: NEC Nijmegen vs Rennes."
+        },
+        {
+            "time": "20:00",
+            "home": "OFI",
+            "away": "Anderlecht",
+            "odds": {
+                "1": "1.90",
+                "X": "3.40",
+                "2": "3.80",
+                "1X": "1.22",
+                "12": "1.30",
+                "X2": "1.80",
+                "O1.5": "1.30",
+                "O2.5": "1.95",
+                "O3.5": "3.40"
+            },
+            "prono": "OVER 1.5",
+            "confidence": "86%",
+            "desc": "Analisi algoritmica ufficiale: OFI vs Anderlecht."
+        },
+        {
+            "time": "20:00",
+            "home": "Sparta Praha",
+            "away": "AZ Alkmaar",
+            "odds": {
+                "1": "1.90",
+                "X": "3.40",
+                "2": "3.80",
+                "1X": "1.22",
+                "12": "1.30",
+                "X2": "1.80",
+                "O1.5": "1.30",
+                "O2.5": "1.95",
+                "O3.5": "3.40"
+            },
+            "prono": "OVER 1.5",
+            "confidence": "86%",
+            "desc": "Analisi algoritmica ufficiale: Sparta Praha vs AZ Alkmaar."
+        },
+        {
+            "time": "20:00",
+            "home": "Sunderland",
+            "away": "Jagiellonia",
+            "odds": {
+                "1": "1.90",
+                "X": "3.40",
+                "2": "3.80",
+                "1X": "1.22",
+                "12": "1.30",
+                "X2": "1.80",
+                "O1.5": "1.30",
+                "O2.5": "1.95",
+                "O3.5": "3.40"
+            },
+            "prono": "OVER 1.5",
+            "confidence": "86%",
+            "desc": "Analisi algoritmica ufficiale: Sunderland vs Jagiellonia."
+        },
+        {
+            "time": "20:00",
+            "home": "Torreense",
+            "away": "Celtic",
+            "odds": {
+                "1": "1.90",
+                "X": "3.40",
+                "2": "3.80",
+                "1X": "1.22",
+                "12": "1.30",
+                "X2": "1.80",
+                "O1.5": "1.30",
+                "O2.5": "1.95",
+                "O3.5": "3.40"
+            },
+            "prono": "OVER 1.5",
+            "confidence": "86%",
+            "desc": "Analisi algoritmica ufficiale: Torreense vs Celtic."
+        }
+    ],
+    "Denmark - 1. Division": [
         {
             "time": "18:00",
-            "home": "Eintracht Frankfurt II",
-            "away": "FSV Mainz 05 II",
+            "home": "Aalborg",
+            "away": "Esbjerg",
             "odds": {
                 "1": "1.90",
                 "X": "3.40",
@@ -4073,113 +2706,14 @@
             },
             "prono": "OVER 1.5",
             "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Eintracht Frankfurt II vs FSV Mainz 05 II."
+            "desc": "Analisi algoritmica ufficiale: Aalborg vs Esbjerg."
         }
     ],
-    "Italy - Serie B": [
-        {
-            "time": "18:00",
-            "home": "Cremonese",
-            "away": "Avellino",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Cremonese vs Avellino."
-        },
-        {
-            "time": "19:00",
-            "home": "Mantova",
-            "away": "Arezzo",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Mantova vs Arezzo."
-        },
-        {
-            "time": "19:00",
-            "home": "Padova",
-            "away": "Sampdoria",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Padova vs Sampdoria."
-        },
-        {
-            "time": "19:00",
-            "home": "Pisa",
-            "away": "Modena",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Pisa vs Modena."
-        }
-    ],
-    "Spain - Copa de la Reina": [
-        {
-            "time": "18:00",
-            "home": "Sporting Huelva W",
-            "away": "FC Levante Badalona W",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Sporting Huelva W vs FC Levante Badalona W."
-        }
-    ],
-    "Spain - Segunda División RFEF - Group 5": [
+    "Germany - Oberliga - Bayern Süd": [
         {
             "time": "18:30",
-            "home": "CF Talavera",
-            "away": "Conquense",
+            "home": "1860 München II",
+            "away": "Pfaffenhofen",
             "odds": {
                 "1": "1.90",
                 "X": "3.40",
@@ -4193,14 +2727,14 @@
             },
             "prono": "OVER 1.5",
             "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: CF Talavera vs Conquense."
+            "desc": "Analisi algoritmica ufficiale: 1860 München II vs Pfaffenhofen."
         }
     ],
-    "Spain - Tercera División RFEF - Group 10": [
+    "World - Premier League International Cup": [
         {
-            "time": "18:30",
-            "home": "Utrera",
-            "away": "Córdoba II",
+            "time": "19:00",
+            "home": "Stoke City U21",
+            "away": "Milan II",
             "odds": {
                 "1": "1.90",
                 "X": "3.40",
@@ -4214,14 +2748,14 @@
             },
             "prono": "OVER 1.5",
             "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Utrera vs Córdoba II."
+            "desc": "Analisi algoritmica ufficiale: Stoke City U21 vs Milan II."
         }
     ],
-    "Spain - Segunda División RFEF - Group 3": [
+    "England - Premier League Cup": [
         {
             "time": "19:00",
-            "home": "Intercity",
-            "away": "Real Murcia II",
+            "home": "Burnley U21",
+            "away": "Wolves U21",
             "odds": {
                 "1": "1.90",
                 "X": "3.40",
@@ -4235,155 +2769,14 @@
             },
             "prono": "OVER 1.5",
             "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Intercity vs Real Murcia II."
-        }
-    ],
-    "England - National League": [
-        {
-            "time": "19:00",
-            "home": "Boreham Wood",
-            "away": "Aldershot Town",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Boreham Wood vs Aldershot Town."
-        },
-        {
-            "time": "19:45",
-            "home": "Harrogate Town",
-            "away": "Kidderminster Harriers",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Harrogate Town vs Kidderminster Harriers."
-        },
-        {
-            "time": "19:45",
-            "home": "Hartlepool",
-            "away": "Solihull Moors",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Hartlepool vs Solihull Moors."
-        }
-    ],
-    "England - EFL Trophy": [
-        {
-            "time": "19:00",
-            "home": "Fleetwood Town",
-            "away": "Leeds United U21",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Fleetwood Town vs Leeds United U21."
-        }
-    ],
-    "Netherlands - Derde Divisie": [
-        {
-            "time": "19:00",
-            "home": "Roosendaal",
-            "away": "Gemert",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Roosendaal vs Gemert."
-        }
-    ],
-    "Brazil - Pernambucano - 1": [
-        {
-            "time": "19:00",
-            "home": "América PE",
-            "away": "Central SC",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: América PE vs Central SC."
-        },
-        {
-            "time": "19:00",
-            "home": "Petrolina",
-            "away": "Íbis",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Petrolina vs Íbis."
+            "desc": "Analisi algoritmica ufficiale: Burnley U21 vs Wolves U21."
         }
     ],
     "Argentina - Reserve League": [
         {
-            "time": "19:00",
-            "home": "Lanús Res.",
-            "away": "River Plate Res.",
+            "time": "19:30",
+            "home": "Vélez Sársfield Res.",
+            "away": "Boca Juniors Res.",
             "odds": {
                 "1": "1.90",
                 "X": "3.40",
@@ -4397,309 +2790,12 @@
             },
             "prono": "OVER 1.5",
             "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Lanús Res. vs River Plate Res.."
-        },
-        {
-            "time": "21:30",
-            "home": "Talleres Córdoba Res.",
-            "away": "Estudiantes La Plata Res",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Talleres Córdoba Res. vs Estudiantes La Plata Res."
-        }
-    ],
-    "England - Championship": [
-        {
-            "time": "19:45",
-            "home": "Bolton",
-            "away": "West Brom",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Bolton vs West Brom."
-        },
-        {
-            "time": "19:45",
-            "home": "Burnley",
-            "away": "Birmingham",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Burnley vs Birmingham."
-        },
-        {
-            "time": "19:45",
-            "home": "Watford",
-            "away": "Blackburn",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Watford vs Blackburn."
-        },
-        {
-            "time": "20:00",
-            "home": "Stoke City",
-            "away": "Millwall",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Stoke City vs Millwall."
-        }
-    ],
-    "San-Marino - Coppa Titano": [
-        {
-            "time": "19:45",
-            "home": "Domagnano",
-            "away": "Tre Fiori",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Domagnano vs Tre Fiori."
-        },
-        {
-            "time": "19:45",
-            "home": "Folgore",
-            "away": "Virtus",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Folgore vs Virtus."
-        },
-        {
-            "time": "19:45",
-            "home": "La Fiorita",
-            "away": "Cosmos",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: La Fiorita vs Cosmos."
-        },
-        {
-            "time": "19:45",
-            "home": "Tre Penne",
-            "away": "Pennarossa",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Tre Penne vs Pennarossa."
-        }
-    ],
-    "Scotland - Football League - Highland League": [
-        {
-            "time": "20:00",
-            "home": "Inverurie Loco Works",
-            "away": "Buckie Thistle",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Inverurie Loco Works vs Buckie Thistle."
-        }
-    ],
-    "Paraguay - Division Profesional - Clausura": [
-        {
-            "time": "21:00",
-            "home": "Cerro Porteno",
-            "away": "Club Guarani",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Cerro Porteno vs Club Guarani."
-        },
-        {
-            "time": "21:00",
-            "home": "Libertad Asuncion",
-            "away": "2 de Mayo",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Libertad Asuncion vs 2 de Mayo."
-        },
-        {
-            "time": "21:00",
-            "home": "Club Sp. San Lorenzo",
-            "away": "Sportivo Ameliano",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Club Sp. San Lorenzo vs Sportivo Ameliano."
-        }
-    ],
-    "Uruguay - Segunda División": [
-        {
-            "time": "21:00",
-            "home": "Colón",
-            "away": "Atenas",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Colón vs Atenas."
-        }
-    ],
-    "Mexico - Liga Premier Serie A": [
-        {
-            "time": "21:30",
-            "home": "Ciervos",
-            "away": "Vaqueros Reynosa",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Ciervos vs Vaqueros Reynosa."
+            "desc": "Analisi algoritmica ufficiale: Vélez Sársfield Res. vs Boca Juniors Res.."
         },
         {
             "time": "22:00",
-            "home": "Guerreros",
-            "away": "Héroes de Zaci",
+            "home": "Independiente Res.",
+            "away": "Gimnasia Mendoza 2",
             "odds": {
                 "1": "1.90",
                 "X": "3.40",
@@ -4713,14 +2809,98 @@
             },
             "prono": "OVER 1.5",
             "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Guerreros vs Héroes de Zaci."
+            "desc": "Analisi algoritmica ufficiale: Independiente Res. vs Gimnasia Mendoza 2."
+        }
+    ],
+    "England - League One": [
+        {
+            "time": "20:00",
+            "home": "Doncaster",
+            "away": "Huddersfield",
+            "odds": {
+                "1": "1.90",
+                "X": "3.40",
+                "2": "3.80",
+                "1X": "1.22",
+                "12": "1.30",
+                "X2": "1.80",
+                "O1.5": "1.30",
+                "O2.5": "1.95",
+                "O3.5": "3.40"
+            },
+            "prono": "OVER 1.5",
+            "confidence": "86%",
+            "desc": "Analisi algoritmica ufficiale: Doncaster vs Huddersfield."
+        }
+    ],
+    "Jamaica - Premier League": [
+        {
+            "time": "20:00",
+            "home": "Cavalier",
+            "away": "Portmore United",
+            "odds": {
+                "1": "1.90",
+                "X": "3.40",
+                "2": "3.80",
+                "1X": "1.22",
+                "12": "1.30",
+                "X2": "1.80",
+                "O1.5": "1.30",
+                "O2.5": "1.95",
+                "O3.5": "3.40"
+            },
+            "prono": "OVER 1.5",
+            "confidence": "86%",
+            "desc": "Analisi algoritmica ufficiale: Cavalier vs Portmore United."
+        }
+    ],
+    "Chile - Segunda División": [
+        {
+            "time": "21:00",
+            "home": "Colina",
+            "away": "General Velásquez",
+            "odds": {
+                "1": "1.90",
+                "X": "3.40",
+                "2": "3.80",
+                "1X": "1.22",
+                "12": "1.30",
+                "X2": "1.80",
+                "O1.5": "1.30",
+                "O2.5": "1.95",
+                "O3.5": "3.40"
+            },
+            "prono": "OVER 1.5",
+            "confidence": "86%",
+            "desc": "Analisi algoritmica ufficiale: Colina vs General Velásquez."
+        }
+    ],
+    "Chile - Primera B": [
+        {
+            "time": "22:00",
+            "home": "Santiago Wanderers",
+            "away": "Recoleta",
+            "odds": {
+                "1": "1.90",
+                "X": "3.40",
+                "2": "3.80",
+                "1X": "1.22",
+                "12": "1.30",
+                "X2": "1.80",
+                "O1.5": "1.30",
+                "O2.5": "1.95",
+                "O3.5": "3.40"
+            },
+            "prono": "OVER 1.5",
+            "confidence": "86%",
+            "desc": "Analisi algoritmica ufficiale: Santiago Wanderers vs Recoleta."
         }
     ],
     "Brazil - Copa Fares Lopes": [
         {
             "time": "22:00",
-            "home": "Fortaleza B",
-            "away": "Ceara B",
+            "home": "Tirol/CEFAT",
+            "away": "Guarani De Juazeiro",
             "odds": {
                 "1": "1.90",
                 "X": "3.40",
@@ -4734,35 +2914,14 @@
             },
             "prono": "OVER 1.5",
             "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Fortaleza B vs Ceara B."
+            "desc": "Analisi algoritmica ufficiale: Tirol/CEFAT vs Guarani De Juazeiro."
         }
     ],
-    "Nicaragua - Primera Division": [
-        {
-            "time": "22:00",
-            "home": "UNAN Managua",
-            "away": "H&H Export",
-            "odds": {
-                "1": "1.90",
-                "X": "3.40",
-                "2": "3.80",
-                "1X": "1.22",
-                "12": "1.30",
-                "X2": "1.80",
-                "O1.5": "1.30",
-                "O2.5": "1.95",
-                "O3.5": "3.40"
-            },
-            "prono": "OVER 1.5",
-            "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: UNAN Managua vs H&H Export."
-        }
-    ],
-    "Venezuela - Copa Venezuela": [
+    "Paraguay - Copa Paraguay": [
         {
             "time": "22:30",
-            "home": "Deportivo Tachira FC",
-            "away": "Carabobo FC",
+            "home": "Cerro Porteno",
+            "away": "Libertad Asuncion",
             "odds": {
                 "1": "1.90",
                 "X": "3.40",
@@ -4776,14 +2935,14 @@
             },
             "prono": "OVER 1.5",
             "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Deportivo Tachira FC vs Carabobo FC."
+            "desc": "Analisi algoritmica ufficiale: Cerro Porteno vs Libertad Asuncion."
         }
     ],
     "Brazil - Serie A": [
         {
             "time": "23:00",
-            "home": "Atletico-MG",
-            "away": "Corinthians",
+            "home": "Sao Paulo",
+            "away": "Remo",
             "odds": {
                 "1": "1.90",
                 "X": "3.40",
@@ -4797,14 +2956,14 @@
             },
             "prono": "OVER 1.5",
             "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Atletico-MG vs Corinthians."
+            "desc": "Analisi algoritmica ufficiale: Sao Paulo vs Remo."
         }
     ],
-    "Bolivia - Copa de la División Profesional": [
+    "Suriname - Eerste Divisie": [
         {
             "time": "23:00",
-            "home": "Real Potosí",
-            "away": "Always Ready",
+            "home": "Robin Hood",
+            "away": "Flora",
             "odds": {
                 "1": "1.90",
                 "X": "3.40",
@@ -4818,7 +2977,28 @@
             },
             "prono": "OVER 1.5",
             "confidence": "86%",
-            "desc": "Analisi algoritmica ufficiale: Real Potosí vs Always Ready."
+            "desc": "Analisi algoritmica ufficiale: Robin Hood vs Flora."
+        }
+    ],
+    "Brazil - Copa do Brasil U20": [
+        {
+            "time": "23:00",
+            "home": "Palmeiras U20",
+            "away": "Operário PR U20",
+            "odds": {
+                "1": "1.90",
+                "X": "3.40",
+                "2": "3.80",
+                "1X": "1.22",
+                "12": "1.30",
+                "X2": "1.80",
+                "O1.5": "1.30",
+                "O2.5": "1.95",
+                "O3.5": "3.40"
+            },
+            "prono": "OVER 1.5",
+            "confidence": "86%",
+            "desc": "Analisi algoritmica ufficiale: Palmeiras U20 vs Operário PR U20."
         }
     ]
 }
